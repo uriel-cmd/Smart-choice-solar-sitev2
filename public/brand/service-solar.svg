@@ -1,0 +1,40 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="48" fill="url(#bg)"/>
+  <g>
+    <circle cx="970" cy="148" r="78" fill="#E2A13A" fill-opacity="0.92">
+      <animate attributeName="r" values="78;84;78" dur="4.6s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.92;1;0.92" dur="4.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="970" cy="148" r="104" stroke="#E2A13A" stroke-opacity="0.24" stroke-width="24">
+      <animate attributeName="r" values="104;114;104" dur="4.6s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.24;0.08;0.24" dur="4.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <path d="M94 574C94 544.177 118.177 520 148 520H1052C1081.82 520 1106 544.177 1106 574V632C1106 661.823 1081.82 686 1052 686H148C118.177 686 94 661.823 94 632V574Z" fill="#1A3052" fill-opacity="0.9"/>
+  <path d="M214 460L516 232C545.479 209.742 586.057 209.594 615.699 231.636L940 473H214V460Z" fill="#234A77"/>
+  <path d="M316 318L608 318L844 474H240L316 318Z" fill="#183252"/>
+  <g>
+    <rect x="350" y="351" width="108" height="78" rx="10" fill="#8FCBE7">
+      <animate attributeName="fill-opacity" values="0.88;1;0.88" dur="3.4s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="474" y="351" width="108" height="78" rx="10" fill="#8FCBE7">
+      <animate attributeName="fill-opacity" values="0.88;1;0.88" dur="3.4s" begin="0.35s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="598" y="351" width="108" height="78" rx="10" fill="#8FCBE7">
+      <animate attributeName="fill-opacity" values="0.88;1;0.88" dur="3.4s" begin="0.7s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="722" y="351" width="108" height="78" rx="10" fill="#8FCBE7">
+      <animate attributeName="fill-opacity" values="0.88;1;0.88" dur="3.4s" begin="1.05s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <path d="M274 482H882L856 540H302L274 482Z" fill="#0E223B"/>
+  <rect x="176" y="472" width="848" height="24" rx="12" fill="#8FCBE7" fill-opacity="0.65"/>
+  <rect x="176" y="496" width="848" height="12" rx="6" fill="#E9F4FB" fill-opacity="0.35"/>
+  <defs>
+    <linearGradient id="bg" x1="116" y1="96" x2="1070" y2="662" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFE"/>
+      <stop offset="0.58" stop-color="#DDECF7"/>
+      <stop offset="1" stop-color="#BCD9EC"/>
+    </linearGradient>
+  </defs>
+</svg>

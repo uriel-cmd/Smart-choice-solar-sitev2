@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #edf5fa;
+  --foreground: #07111f;
+  --card: rgba(255, 255, 255, 0.76);
+  --card-strong: rgba(255, 255, 255, 0.95);
+  --border: rgba(16, 35, 63, 0.1);
+  --accent: #8fcbe7;
+  --accent-warm: #e2a13a;
+  --success: #8fcbe7;
+  --radius: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(143, 203, 231, 0.22), transparent 24%),
+    radial-gradient(circle at 85% 15%, rgba(226, 161, 58, 0.09), transparent 18%),
+    linear-gradient(180deg, #f7fbfe 0%, #eef5fa 46%, #e8f1f7 100%);
+  color: var(--foreground);
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::selection {
+  background: rgba(143, 203, 231, 0.3);
+}
+
+.container-shell {
+  @apply mx-auto w-full max-w-[1600px] px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12;
+}
+
+.glass-panel {
+  background: var(--card);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 50px rgba(26, 48, 82, 0.09);
+}
+
+.glass-panel-strong {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.82));
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(143, 203, 231, 0.4);
+  box-shadow: 0 26px 60px rgba(26, 48, 82, 0.12);
+}
+
+.brand-panel {
+  background:
+    linear-gradient(160deg, rgba(26, 48, 82, 0.98) 0%, rgba(19, 37, 64, 0.98) 42%, rgba(73, 136, 177, 0.94) 86%, rgba(143, 203, 231, 0.88) 130%);
+  box-shadow: 0 28px 70px rgba(26, 48, 82, 0.28);
+}
+
+.brand-panel-soft {
+  background:
+    linear-gradient(145deg, rgba(26, 48, 82, 0.95) 0%, rgba(26, 48, 82, 0.9) 68%, rgba(143, 203, 231, 0.34) 110%);
+  box-shadow: 0 22px 60px rgba(26, 48, 82, 0.22);
+}
+
+.accent-button {
+  @apply rounded-full px-6 py-4 text-center text-sm font-semibold text-white transition hover:brightness-95;
+  background: linear-gradient(135deg, #8fcbe7 0%, #5da8cf 55%, #1a3052 140%);
+  box-shadow: 0 14px 36px rgba(93, 168, 207, 0.34);
+}
+
+.accent-chip {
+  @apply rounded-full px-3 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate;
+  border: 1px solid rgba(143, 203, 231, 0.35);
+  background: rgba(143, 203, 231, 0.12);
+}
+
+.sun-accent {
+  color: #e2a13a;
+}
+
+.section-space {
+  @apply py-16 md:py-24;
+}
+
+.section-band {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(244, 249, 253, 0.92) 100%);
+  border-top: 1px solid rgba(26, 48, 82, 0.06);
+  border-bottom: 1px solid rgba(26, 48, 82, 0.06);
+}
+
+.section-band-soft {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(233, 243, 250, 0.9) 0%, rgba(247, 251, 254, 0.96) 100%);
+  border-top: 1px solid rgba(143, 203, 231, 0.28);
+  border-bottom: 1px solid rgba(26, 48, 82, 0.06);
+}
+
+.section-band-dark {
+  position: relative;
+  background:
+    radial-gradient(circle at top left, rgba(143, 203, 231, 0.14), transparent 22%),
+    radial-gradient(circle at 90% 15%, rgba(226, 161, 58, 0.08), transparent 18%),
+    linear-gradient(180deg, rgba(28, 47, 80, 0.98) 0%, rgba(34, 57, 93, 0.96) 48%, rgba(236, 244, 250, 0.9) 100%);
+  border-top: 1px solid rgba(26, 48, 82, 0.08);
+  border-bottom: 1px solid rgba(26, 48, 82, 0.08);
+}
+
+.section-band-compare {
+  position: relative;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(226, 161, 58, 0.12), transparent 20%),
+    radial-gradient(circle at 88% 22%, rgba(143, 203, 231, 0.2), transparent 22%),
+    linear-gradient(180deg, rgba(245, 250, 253, 0.92) 0%, rgba(232, 243, 250, 0.96) 52%, rgba(248, 251, 254, 0.94) 100%);
+  border-top: 1px solid rgba(143, 203, 231, 0.26);
+  border-bottom: 1px solid rgba(26, 48, 82, 0.06);
+}
+
+.section-band-confidence {
+  position: relative;
+  background:
+    linear-gradient(90deg, rgba(26, 48, 82, 0.04) 0 1px, transparent 1px 100%),
+    radial-gradient(circle at top right, rgba(143, 203, 231, 0.16), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(238, 246, 251, 0.95) 100%);
+  background-size: 28px 28px, auto, auto;
+  border-top: 1px solid rgba(26, 48, 82, 0.08);
+  border-bottom: 1px solid rgba(143, 203, 231, 0.22);
+}
+
+.eyebrow {
+  @apply inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-slate;
+  border: 1px solid rgba(143, 203, 231, 0.3);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.headline {
+  @apply text-4xl font-semibold tracking-tight text-slate sm:text-5xl lg:text-7xl;
+}
+
+.subheadline {
+  @apply text-base leading-7 sm:text-lg;
+  color: rgba(26, 48, 82, 0.8);
+}
+
+.grid-overlay {
+  background-image:
+    linear-gradient(rgba(16, 35, 63, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 35, 63, 0.045) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.content-rich h2 {
+  @apply mt-10 text-2xl font-semibold tracking-tight text-slate;
+}
+
+.content-rich p {
+  @apply mt-4 text-base leading-8;
+  color: rgba(26, 48, 82, 0.8);
+}
+
+.content-rich ul {
+  @apply mt-4 space-y-3 pl-5;
+}
+
+.content-rich li {
+  @apply text-base leading-8;
+  color: rgba(26, 48, 82, 0.8);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@keyframes reviews-marquee {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-50% - 0.5rem));
+  }
+}
+
+.reviews-marquee {
+  overflow: hidden;
+}
+
+.reviews-marquee-track {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: reviews-marquee var(--reviews-duration, 30s) linear infinite;
+  will-change: transform;
+}
+
+.reviews-marquee:hover .reviews-marquee-track {
+  animation-play-state: paused;
+}
