@@ -10,13 +10,65 @@ import { localizeHref } from "@/lib/i18n";
 import { primaryNav, serviceNav, siteConfig } from "@/lib/site";
 import { navLabelFor, serviceNavLabelFor } from "@/lib/translations";
 
+function BottomNavIcon({ icon }: { icon: "home" | "reviews" | "sun" | "phone" | "menu" }) {
+  const commonProps = {
+    width: 22,
+    height: 22,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    "aria-hidden": true
+  };
+
+  if (icon === "home") {
+    return (
+      <svg {...commonProps}>
+        <path d="M4 11.3 12 5l8 6.3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M6.5 10.5V19h11v-8.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M10 19v-5h4v5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    );
+  }
+
+  if (icon === "reviews") {
+    return (
+      <svg {...commonProps}>
+        <path d="m12 4.6 2.1 4.2 4.7.7-3.4 3.3.8 4.7-4.2-2.2-4.2 2.2.8-4.7-3.4-3.3 4.7-.7L12 4.6Z" fill="currentColor" />
+      </svg>
+    );
+  }
+
+  if (icon === "sun") {
+    return (
+      <svg {...commonProps}>
+        <circle cx="12" cy="12" r="4.2" fill="currentColor" />
+        <path d="M12 2.8v2.1M12 19.1v2.1M4.1 4.1l1.5 1.5M18.4 18.4l1.5 1.5M2.8 12h2.1M19.1 12h2.1M4.1 19.9l1.5-1.5M18.4 5.6l1.5-1.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      </svg>
+    );
+  }
+
+  if (icon === "phone") {
+    return (
+      <svg {...commonProps}>
+        <path d="M8.1 4.2 10 8.4 8.6 9.7c1 2.1 2.6 3.8 4.8 4.8l1.4-1.4 4.1 1.9-.7 3.4c-.2.9-1 1.5-2 1.4C9.4 19.2 4.8 14.6 4.2 7.8c-.1-.9.5-1.8 1.4-2l2.5-.6Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    );
+  }
+
+  return (
+    <svg {...commonProps}>
+      <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   const { language, setLanguage } = useLanguage();
   const t = useTranslation();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate/10 bg-white/92 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-slate/10 bg-white lg:bg-white/92 lg:backdrop-blur-xl">
       <div className="border-b border-white/10 bg-slate text-white">
         <div className="relative flex min-h-8 items-center justify-center px-4 text-[10px] font-semibold uppercase tracking-[0.2em] text-white/80 sm:min-h-9 sm:text-[11px] lg:min-h-11 lg:text-xs lg:tracking-[0.22em]">
           <p>{t.header.topStrip}</p>
@@ -144,22 +196,24 @@ export function SiteHeader() {
           </div>
         </div>
       ) : null}
-      <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-slate/10 bg-white/96 shadow-[0_-12px_36px_rgba(26,48,82,0.12)] backdrop-blur-xl lg:hidden">
-        <div className="grid h-[72px] grid-cols-5 items-center px-2 text-[11px] font-semibold text-slate/72">
+      <nav className="fixed inset-x-0 bottom-0 z-[100] border-t border-slate/10 bg-white shadow-[0_-12px_36px_rgba(26,48,82,0.12)] lg:hidden">
+        <div className="grid min-h-[72px] grid-cols-5 items-center px-2 pb-[env(safe-area-inset-bottom)] text-[11px] font-semibold text-slate/72">
           <Link href={localizeHref("/", language)} className="flex flex-col items-center gap-1 text-slate" onClick={() => setOpen(false)}>
-            <span aria-hidden="true" className="text-lg">⌂</span>
+            <BottomNavIcon icon="home" />
             <span>{t.nav.home}</span>
           </Link>
           <Link href={localizeHref("/reviews", language)} className="flex flex-col items-center gap-1" onClick={() => setOpen(false)}>
-            <span aria-hidden="true" className="text-lg">★</span>
+            <BottomNavIcon icon="reviews" />
             <span>{t.nav.reviews}</span>
           </Link>
           <Link href={localizeHref("/solutions", language)} className="flex flex-col items-center gap-1" onClick={() => setOpen(false)}>
-            <span aria-hidden="true" className="text-lg">☀</span>
+            <span className="text-sun">
+              <BottomNavIcon icon="sun" />
+            </span>
             <span>{t.nav.solutions}</span>
           </Link>
           <a href={`tel:${siteConfig.phoneHref}`} className="flex flex-col items-center gap-1">
-            <span aria-hidden="true" className="text-lg">☎</span>
+            <BottomNavIcon icon="phone" />
             <span>{t.header.call}</span>
           </a>
           <button
@@ -169,7 +223,7 @@ export function SiteHeader() {
             aria-expanded={open}
             aria-controls="mobile-nav"
           >
-            <span aria-hidden="true" className="text-lg">☰</span>
+            <BottomNavIcon icon="menu" />
             <span>{t.header.menu}</span>
           </button>
         </div>
