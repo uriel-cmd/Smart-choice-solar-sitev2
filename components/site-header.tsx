@@ -17,10 +17,10 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate/10 bg-white/92 backdrop-blur-xl">
-      <div className="hidden border-b border-white/10 bg-slate text-white lg:block">
-        <div className="relative flex min-h-11 items-center justify-center px-4 text-xs font-semibold uppercase tracking-[0.22em] text-white/80">
+      <div className="border-b border-white/10 bg-slate text-white">
+        <div className="relative flex min-h-8 items-center justify-center px-4 text-[10px] font-semibold uppercase tracking-[0.2em] text-white/80 sm:min-h-9 sm:text-[11px] lg:min-h-11 lg:text-xs lg:tracking-[0.22em]">
           <p>{t.header.topStrip}</p>
-          <div className="absolute right-8 top-1/2 -translate-y-1/2">
+          <div className="absolute right-8 top-1/2 hidden -translate-y-1/2 lg:block">
             <label className="sr-only" htmlFor="desktop-language-select">
               {t.header.language}
             </label>
@@ -43,7 +43,7 @@ export function SiteHeader() {
           </div>
         </div>
       </div>
-      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 flex min-h-20 items-center gap-4 lg:min-h-32 lg:gap-8">
+      <div className="flex min-h-20 w-full items-center gap-3 px-4 sm:gap-4 sm:px-6 lg:min-h-32 lg:gap-8 lg:px-8 xl:px-10 2xl:px-12">
         <div className="shrink-0">
           <Logo />
         </div>
