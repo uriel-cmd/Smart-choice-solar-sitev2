@@ -135,14 +135,14 @@ export function ZipEstimatorController() {
   return (
     <>
       {contactOpen ? (
-        <div className="fixed inset-0 z-[90] bg-ink/65 backdrop-blur-sm">
-          <div className="flex min-h-full items-end justify-center p-0 sm:items-center sm:p-6">
-            <div className="w-full bg-white p-4 sm:max-w-2xl sm:rounded-[32px] sm:p-6">
-              <div className="mb-4 flex justify-end">
+        <div className="fixed inset-0 z-[120] overflow-y-auto bg-ink/65 backdrop-blur-sm">
+          <div className="flex min-h-[100dvh] items-start justify-center px-3 pb-[calc(112px+env(safe-area-inset-bottom))] pt-5 sm:items-center sm:p-6">
+            <div className="w-full max-w-2xl sm:rounded-[32px] sm:bg-white sm:p-6">
+              <div className="sticky top-3 z-10 mb-3 flex justify-end sm:static sm:mb-4">
                 <button
                   type="button"
                   onClick={() => setContactOpen(false)}
-                  className="rounded-full border border-line px-3 py-2 text-sm font-semibold text-ink"
+                  className="rounded-full border border-line bg-white px-3 py-2 text-sm font-semibold text-ink shadow-[0_10px_24px_rgba(26,48,82,0.12)]"
                 >
                   {t.zipPopup.close}
                 </button>
