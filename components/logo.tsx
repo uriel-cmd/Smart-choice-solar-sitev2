@@ -14,11 +14,11 @@ export function Logo({ variant = "desktop" }: LogoProps) {
 
   const frameClassName =
     variant === "mobile"
-      ? "relative h-14 w-[260px] sm:h-16 sm:w-[320px]"
+      ? "relative h-14 w-[260px] overflow-hidden sm:h-16 sm:w-[320px]"
       : "relative h-8 w-[180px] overflow-hidden sm:h-10 sm:w-[290px] lg:h-[102px] lg:w-[700px]";
   const imageClassName =
     variant === "mobile"
-      ? "h-full w-full object-contain"
+      ? "absolute left-1/2 top-1/2 h-[164px] w-auto max-w-none -translate-x-1/2 -translate-y-1/2 sm:h-[190px]"
       : "absolute left-0 top-1/2 h-[96px] w-auto max-w-none -translate-y-1/2 sm:h-[132px] lg:h-[308px]";
 
   return (
