@@ -60,7 +60,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         <LanguageProvider>
           <SiteHeader />
-          <main>{children}</main>
+          <main className="pb-[72px] lg:pb-0">{children}</main>
           <SiteFooter />
           <Suspense fallback={null}>
             <ZipEstimatorController />

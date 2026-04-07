@@ -43,7 +43,25 @@ export function SiteHeader() {
           </div>
         </div>
       </div>
-      <div className="flex min-h-20 w-full items-center gap-3 px-4 sm:gap-4 sm:px-6 lg:min-h-32 lg:gap-8 lg:px-8 xl:px-10 2xl:px-12">
+      <div className="flex w-full flex-col items-center gap-3 px-4 py-4 lg:hidden">
+        <Logo variant="mobile" />
+        <div className="grid w-full max-w-sm grid-cols-2 gap-3">
+          <a
+            href={`tel:${siteConfig.phoneHref}`}
+            className="rounded-full border border-slate/15 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(239,247,252,0.94))] px-4 py-3 text-center text-sm font-semibold text-slate shadow-[inset_0_1px_0_rgba(255,255,255,0.55)]"
+          >
+            {t.header.call} {siteConfig.phoneDisplay}
+          </a>
+          <button
+            type="button"
+            onClick={() => openContactEvent()}
+            className="rounded-full bg-[linear-gradient(180deg,#73b5da_0%,#4d8fbb_100%)] px-4 py-3 text-center text-sm font-semibold text-white shadow-[0_14px_30px_rgba(77,143,187,0.26)]"
+          >
+            {t.header.getInTouch}
+          </button>
+        </div>
+      </div>
+      <div className="hidden min-h-32 w-full items-center gap-8 px-8 lg:flex xl:px-10 2xl:px-12">
         <div className="shrink-0">
           <Logo />
         </div>
@@ -69,18 +87,9 @@ export function SiteHeader() {
             {t.header.call} {siteConfig.phoneDisplay}
           </a>
         </div>
-        <button
-          type="button"
-          className="inline-flex rounded-full border border-line px-4 py-2 text-sm font-semibold text-ink lg:hidden"
-          onClick={() => setOpen((value) => !value)}
-          aria-expanded={open}
-          aria-controls="mobile-nav"
-        >
-          {t.header.menu}
-        </button>
       </div>
       {open ? (
-        <div id="mobile-nav" className="border-t border-line bg-white lg:hidden">
+        <div id="mobile-nav" className="fixed inset-x-0 bottom-[72px] z-[60] border-t border-line bg-white shadow-[0_-18px_50px_rgba(26,48,82,0.16)] lg:hidden">
           <div className="container-shell flex flex-col gap-2 py-4">
             <div className="rounded-[24px] border border-sky/20 bg-cloud px-4 py-4">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate/70">{t.header.popularPaths}</p>
@@ -135,6 +144,36 @@ export function SiteHeader() {
           </div>
         </div>
       ) : null}
+      <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-slate/10 bg-white/96 shadow-[0_-12px_36px_rgba(26,48,82,0.12)] backdrop-blur-xl lg:hidden">
+        <div className="grid h-[72px] grid-cols-5 items-center px-2 text-[11px] font-semibold text-slate/72">
+          <Link href={localizeHref("/", language)} className="flex flex-col items-center gap-1 text-slate" onClick={() => setOpen(false)}>
+            <span aria-hidden="true" className="text-lg">⌂</span>
+            <span>{t.nav.home}</span>
+          </Link>
+          <Link href={localizeHref("/reviews", language)} className="flex flex-col items-center gap-1" onClick={() => setOpen(false)}>
+            <span aria-hidden="true" className="text-lg">★</span>
+            <span>{t.nav.reviews}</span>
+          </Link>
+          <Link href={localizeHref("/solutions", language)} className="flex flex-col items-center gap-1" onClick={() => setOpen(false)}>
+            <span aria-hidden="true" className="text-lg">☀</span>
+            <span>{t.nav.solutions}</span>
+          </Link>
+          <a href={`tel:${siteConfig.phoneHref}`} className="flex flex-col items-center gap-1">
+            <span aria-hidden="true" className="text-lg">☎</span>
+            <span>{t.header.call}</span>
+          </a>
+          <button
+            type="button"
+            className="flex flex-col items-center gap-1"
+            onClick={() => setOpen((value) => !value)}
+            aria-expanded={open}
+            aria-controls="mobile-nav"
+          >
+            <span aria-hidden="true" className="text-lg">☰</span>
+            <span>{t.header.menu}</span>
+          </button>
+        </div>
+      </nav>
       <div className="hidden border-t border-slate/8 bg-slate/[0.03] lg:block">
         <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 flex min-h-12 items-center gap-3 overflow-x-auto text-xs font-semibold uppercase tracking-[0.18em] text-slate/70">
           <span className="shrink-0 text-slate/55">{t.nav.exploreServices}</span>
