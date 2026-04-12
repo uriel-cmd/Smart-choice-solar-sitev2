@@ -67,10 +67,11 @@ export function EstimateCalculator() {
                   </div>
                 </div>
                 <div>
-                  <label className="text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
+                  <label htmlFor="estimate-roof-status" className="text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
                     {t.estimateCalculator.roofStatus}
                   </label>
                   <select
+                    id="estimate-roof-status"
                     value={roofStatus}
                     onChange={(event) => setRoofStatus(event.target.value)}
                     className="mt-3 w-full rounded-[18px] border border-white/15 bg-white/10 px-4 py-3 text-sm text-white outline-none"
@@ -81,10 +82,11 @@ export function EstimateCalculator() {
                   </select>
                 </div>
                 <div>
-                  <label className="text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
+                  <label htmlFor="estimate-backup-interest" className="text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
                     {t.estimateCalculator.backupInterest}
                   </label>
                   <select
+                    id="estimate-backup-interest"
                     value={backupPriority}
                     onChange={(event) => setBackupPriority(event.target.value)}
                     className="mt-3 w-full rounded-[18px] border border-white/15 bg-white/10 px-4 py-3 text-sm text-white outline-none"
