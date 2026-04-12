@@ -1,417 +1,417 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://smartchoice.solar</loc>
+    <loc>https://www.smartchoice.solar</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es</loc>
+    <loc>https://www.smartchoice.solar/es</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/solutions</loc>
+    <loc>https://www.smartchoice.solar/solutions</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/solutions" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/solutions" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/solutions" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solutions" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solutions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solutions" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/solutions</loc>
+    <loc>https://www.smartchoice.solar/es/solutions</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/solutions" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/solutions" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/solutions" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solutions" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solutions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solutions" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/solar</loc>
+    <loc>https://www.smartchoice.solar/solar</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/solar" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/solar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/solar" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/solar</loc>
+    <loc>https://www.smartchoice.solar/es/solar</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/solar" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/solar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/solar" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/battery-storage</loc>
+    <loc>https://www.smartchoice.solar/battery-storage</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/battery-storage" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/battery-storage" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/battery-storage" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/battery-storage" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/battery-storage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/battery-storage" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/battery-storage</loc>
+    <loc>https://www.smartchoice.solar/es/battery-storage</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/battery-storage" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/battery-storage" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/battery-storage" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/battery-storage" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/battery-storage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/battery-storage" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/roofing</loc>
+    <loc>https://www.smartchoice.solar/roofing</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/roofing" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/roofing" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/roofing" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/roofing" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/roofing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/roofing" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/roofing</loc>
+    <loc>https://www.smartchoice.solar/es/roofing</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/roofing" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/roofing" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/roofing" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/roofing" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/roofing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/roofing" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/about</loc>
+    <loc>https://www.smartchoice.solar/about</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/about" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/about" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/about" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/about" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/about" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/about</loc>
+    <loc>https://www.smartchoice.solar/es/about</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/about" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/about" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/about" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/about" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/about" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/reviews</loc>
+    <loc>https://www.smartchoice.solar/reviews</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/reviews" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/reviews" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/reviews" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/reviews" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/reviews" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/reviews" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/reviews</loc>
+    <loc>https://www.smartchoice.solar/es/reviews</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/reviews" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/reviews" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/reviews" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/reviews" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/reviews" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/reviews" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/service-areas</loc>
+    <loc>https://www.smartchoice.solar/service-areas</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/service-areas" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/service-areas" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/service-areas" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/service-areas" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/service-areas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/service-areas" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/service-areas</loc>
+    <loc>https://www.smartchoice.solar/es/service-areas</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/service-areas" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/service-areas" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/service-areas" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/service-areas" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/service-areas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/service-areas" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/contact</loc>
+    <loc>https://www.smartchoice.solar/contact</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/contact" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/contact" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/contact" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/contact" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/contact" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/contact</loc>
+    <loc>https://www.smartchoice.solar/es/contact</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/contact" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/contact" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/contact" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/contact" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/contact" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/blog</loc>
+    <loc>https://www.smartchoice.solar/blog</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/blog</loc>
+    <loc>https://www.smartchoice.solar/es/blog</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/privacy-policy</loc>
+    <loc>https://www.smartchoice.solar/privacy-policy</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/privacy-policy" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/privacy-policy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/privacy-policy" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/privacy-policy</loc>
+    <loc>https://www.smartchoice.solar/es/privacy-policy</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/privacy-policy" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/privacy-policy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/privacy-policy" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/terms</loc>
+    <loc>https://www.smartchoice.solar/terms</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/terms" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/terms" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/terms" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/terms" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/terms" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/terms</loc>
+    <loc>https://www.smartchoice.solar/es/terms</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/terms" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/terms" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/terms" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/terms" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/terms" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/blog/how-long-do-solar-panels-last-and-when-should-you-upgrade</loc>
+    <loc>https://www.smartchoice.solar/blog/how-long-do-solar-panels-last-and-when-should-you-upgrade</loc>
     <lastmod>2026-04-05T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/how-long-do-solar-panels-last-and-when-should-you-upgrade" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/how-long-do-solar-panels-last-and-when-should-you-upgrade" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/how-long-do-solar-panels-last-and-when-should-you-upgrade" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/how-long-do-solar-panels-last-and-when-should-you-upgrade" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/how-long-do-solar-panels-last-and-when-should-you-upgrade" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/how-long-do-solar-panels-last-and-when-should-you-upgrade" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/blog/how-long-do-solar-panels-last-and-when-should-you-upgrade</loc>
+    <loc>https://www.smartchoice.solar/es/blog/how-long-do-solar-panels-last-and-when-should-you-upgrade</loc>
     <lastmod>2026-04-05T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/how-long-do-solar-panels-last-and-when-should-you-upgrade" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/how-long-do-solar-panels-last-and-when-should-you-upgrade" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/how-long-do-solar-panels-last-and-when-should-you-upgrade" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/how-long-do-solar-panels-last-and-when-should-you-upgrade" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/how-long-do-solar-panels-last-and-when-should-you-upgrade" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/how-long-do-solar-panels-last-and-when-should-you-upgrade" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/blog/what-happens-if-you-sell-a-house-with-solar</loc>
+    <loc>https://www.smartchoice.solar/blog/what-happens-if-you-sell-a-house-with-solar</loc>
     <lastmod>2026-04-03T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/what-happens-if-you-sell-a-house-with-solar" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/what-happens-if-you-sell-a-house-with-solar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/what-happens-if-you-sell-a-house-with-solar" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/what-happens-if-you-sell-a-house-with-solar" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/what-happens-if-you-sell-a-house-with-solar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/what-happens-if-you-sell-a-house-with-solar" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/blog/what-happens-if-you-sell-a-house-with-solar</loc>
+    <loc>https://www.smartchoice.solar/es/blog/what-happens-if-you-sell-a-house-with-solar</loc>
     <lastmod>2026-04-03T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/what-happens-if-you-sell-a-house-with-solar" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/what-happens-if-you-sell-a-house-with-solar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/what-happens-if-you-sell-a-house-with-solar" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/what-happens-if-you-sell-a-house-with-solar" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/what-happens-if-you-sell-a-house-with-solar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/what-happens-if-you-sell-a-house-with-solar" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/blog/do-you-need-a-new-roof-before-going-solar</loc>
+    <loc>https://www.smartchoice.solar/blog/do-you-need-a-new-roof-before-going-solar</loc>
     <lastmod>2026-04-01T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/do-you-need-a-new-roof-before-going-solar" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/do-you-need-a-new-roof-before-going-solar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/do-you-need-a-new-roof-before-going-solar" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/do-you-need-a-new-roof-before-going-solar" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/do-you-need-a-new-roof-before-going-solar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/do-you-need-a-new-roof-before-going-solar" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/blog/do-you-need-a-new-roof-before-going-solar</loc>
+    <loc>https://www.smartchoice.solar/es/blog/do-you-need-a-new-roof-before-going-solar</loc>
     <lastmod>2026-04-01T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/do-you-need-a-new-roof-before-going-solar" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/do-you-need-a-new-roof-before-going-solar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/do-you-need-a-new-roof-before-going-solar" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/do-you-need-a-new-roof-before-going-solar" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/do-you-need-a-new-roof-before-going-solar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/do-you-need-a-new-roof-before-going-solar" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/blog/how-much-battery-backup-do-you-really-need</loc>
+    <loc>https://www.smartchoice.solar/blog/how-much-battery-backup-do-you-really-need</loc>
     <lastmod>2026-03-29T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/how-much-battery-backup-do-you-really-need" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/how-much-battery-backup-do-you-really-need" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/how-much-battery-backup-do-you-really-need" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/how-much-battery-backup-do-you-really-need" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/how-much-battery-backup-do-you-really-need" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/how-much-battery-backup-do-you-really-need" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/blog/how-much-battery-backup-do-you-really-need</loc>
+    <loc>https://www.smartchoice.solar/es/blog/how-much-battery-backup-do-you-really-need</loc>
     <lastmod>2026-03-29T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/how-much-battery-backup-do-you-really-need" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/how-much-battery-backup-do-you-really-need" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/how-much-battery-backup-do-you-really-need" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/how-much-battery-backup-do-you-really-need" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/how-much-battery-backup-do-you-really-need" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/how-much-battery-backup-do-you-really-need" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/blog/cash-vs-loan-vs-lease-vs-ppa-which-solar-option-fits-best</loc>
+    <loc>https://www.smartchoice.solar/blog/cash-vs-loan-vs-lease-vs-ppa-which-solar-option-fits-best</loc>
     <lastmod>2026-03-26T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/cash-vs-loan-vs-lease-vs-ppa-which-solar-option-fits-best" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/cash-vs-loan-vs-lease-vs-ppa-which-solar-option-fits-best" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/cash-vs-loan-vs-lease-vs-ppa-which-solar-option-fits-best" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/cash-vs-loan-vs-lease-vs-ppa-which-solar-option-fits-best" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/cash-vs-loan-vs-lease-vs-ppa-which-solar-option-fits-best" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/cash-vs-loan-vs-lease-vs-ppa-which-solar-option-fits-best" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/blog/cash-vs-loan-vs-lease-vs-ppa-which-solar-option-fits-best</loc>
+    <loc>https://www.smartchoice.solar/es/blog/cash-vs-loan-vs-lease-vs-ppa-which-solar-option-fits-best</loc>
     <lastmod>2026-03-26T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/cash-vs-loan-vs-lease-vs-ppa-which-solar-option-fits-best" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/cash-vs-loan-vs-lease-vs-ppa-which-solar-option-fits-best" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/cash-vs-loan-vs-lease-vs-ppa-which-solar-option-fits-best" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/cash-vs-loan-vs-lease-vs-ppa-which-solar-option-fits-best" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/cash-vs-loan-vs-lease-vs-ppa-which-solar-option-fits-best" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/cash-vs-loan-vs-lease-vs-ppa-which-solar-option-fits-best" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/blog/what-to-expect-during-solar-installation-week</loc>
+    <loc>https://www.smartchoice.solar/blog/what-to-expect-during-solar-installation-week</loc>
     <lastmod>2026-03-22T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/what-to-expect-during-solar-installation-week" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/what-to-expect-during-solar-installation-week" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/what-to-expect-during-solar-installation-week" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/what-to-expect-during-solar-installation-week" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/what-to-expect-during-solar-installation-week" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/what-to-expect-during-solar-installation-week" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/blog/what-to-expect-during-solar-installation-week</loc>
+    <loc>https://www.smartchoice.solar/es/blog/what-to-expect-during-solar-installation-week</loc>
     <lastmod>2026-03-22T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/what-to-expect-during-solar-installation-week" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/what-to-expect-during-solar-installation-week" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/what-to-expect-during-solar-installation-week" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/what-to-expect-during-solar-installation-week" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/what-to-expect-during-solar-installation-week" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/what-to-expect-during-solar-installation-week" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/blog/how-home-batteries-help-during-outages</loc>
+    <loc>https://www.smartchoice.solar/blog/how-home-batteries-help-during-outages</loc>
     <lastmod>2026-03-18T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/how-home-batteries-help-during-outages" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/how-home-batteries-help-during-outages" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/how-home-batteries-help-during-outages" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/how-home-batteries-help-during-outages" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/how-home-batteries-help-during-outages" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/how-home-batteries-help-during-outages" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/blog/how-home-batteries-help-during-outages</loc>
+    <loc>https://www.smartchoice.solar/es/blog/how-home-batteries-help-during-outages</loc>
     <lastmod>2026-03-18T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/how-home-batteries-help-during-outages" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/how-home-batteries-help-during-outages" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/how-home-batteries-help-during-outages" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/how-home-batteries-help-during-outages" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/how-home-batteries-help-during-outages" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/how-home-batteries-help-during-outages" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/blog/what-homeowners-should-know-about-the-california-solar-market-in-2026</loc>
+    <loc>https://www.smartchoice.solar/blog/what-homeowners-should-know-about-the-california-solar-market-in-2026</loc>
     <lastmod>2026-03-18T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/what-homeowners-should-know-about-the-california-solar-market-in-2026" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/what-homeowners-should-know-about-the-california-solar-market-in-2026" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/what-homeowners-should-know-about-the-california-solar-market-in-2026" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/what-homeowners-should-know-about-the-california-solar-market-in-2026" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/what-homeowners-should-know-about-the-california-solar-market-in-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/what-homeowners-should-know-about-the-california-solar-market-in-2026" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/blog/what-homeowners-should-know-about-the-california-solar-market-in-2026</loc>
+    <loc>https://www.smartchoice.solar/es/blog/what-homeowners-should-know-about-the-california-solar-market-in-2026</loc>
     <lastmod>2026-03-18T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/what-homeowners-should-know-about-the-california-solar-market-in-2026" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/what-homeowners-should-know-about-the-california-solar-market-in-2026" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/what-homeowners-should-know-about-the-california-solar-market-in-2026" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/what-homeowners-should-know-about-the-california-solar-market-in-2026" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/what-homeowners-should-know-about-the-california-solar-market-in-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/what-homeowners-should-know-about-the-california-solar-market-in-2026" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/blog/why-home-battery-demand-keeps-growing-in-california</loc>
+    <loc>https://www.smartchoice.solar/blog/why-home-battery-demand-keeps-growing-in-california</loc>
     <lastmod>2026-03-14T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/why-home-battery-demand-keeps-growing-in-california" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/why-home-battery-demand-keeps-growing-in-california" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/why-home-battery-demand-keeps-growing-in-california" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/why-home-battery-demand-keeps-growing-in-california" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/why-home-battery-demand-keeps-growing-in-california" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/why-home-battery-demand-keeps-growing-in-california" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/blog/why-home-battery-demand-keeps-growing-in-california</loc>
+    <loc>https://www.smartchoice.solar/es/blog/why-home-battery-demand-keeps-growing-in-california</loc>
     <lastmod>2026-03-14T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/why-home-battery-demand-keeps-growing-in-california" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/why-home-battery-demand-keeps-growing-in-california" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/why-home-battery-demand-keeps-growing-in-california" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/why-home-battery-demand-keeps-growing-in-california" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/why-home-battery-demand-keeps-growing-in-california" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/why-home-battery-demand-keeps-growing-in-california" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/blog/solar-roofing-why-planning-together-matters</loc>
+    <loc>https://www.smartchoice.solar/blog/solar-roofing-why-planning-together-matters</loc>
     <lastmod>2026-03-10T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/solar-roofing-why-planning-together-matters" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/solar-roofing-why-planning-together-matters" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/solar-roofing-why-planning-together-matters" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/solar-roofing-why-planning-together-matters" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/solar-roofing-why-planning-together-matters" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/solar-roofing-why-planning-together-matters" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/blog/solar-roofing-why-planning-together-matters</loc>
+    <loc>https://www.smartchoice.solar/es/blog/solar-roofing-why-planning-together-matters</loc>
     <lastmod>2026-03-10T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/solar-roofing-why-planning-together-matters" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/solar-roofing-why-planning-together-matters" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/solar-roofing-why-planning-together-matters" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/solar-roofing-why-planning-together-matters" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/solar-roofing-why-planning-together-matters" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/solar-roofing-why-planning-together-matters" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/blog/questions-to-ask-before-signing-a-solar-contract</loc>
+    <loc>https://www.smartchoice.solar/blog/questions-to-ask-before-signing-a-solar-contract</loc>
     <lastmod>2026-02-28T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/questions-to-ask-before-signing-a-solar-contract" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/questions-to-ask-before-signing-a-solar-contract" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/questions-to-ask-before-signing-a-solar-contract" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/questions-to-ask-before-signing-a-solar-contract" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/questions-to-ask-before-signing-a-solar-contract" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/questions-to-ask-before-signing-a-solar-contract" />
   </url>
   <url>
-    <loc>https://smartchoice.solar/es/blog/questions-to-ask-before-signing-a-solar-contract</loc>
+    <loc>https://www.smartchoice.solar/es/blog/questions-to-ask-before-signing-a-solar-contract</loc>
     <lastmod>2026-02-28T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://smartchoice.solar/blog/questions-to-ask-before-signing-a-solar-contract" />
-    <xhtml:link rel="alternate" hreflang="es-US" href="https://smartchoice.solar/es/blog/questions-to-ask-before-signing-a-solar-contract" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smartchoice.solar/blog/questions-to-ask-before-signing-a-solar-contract" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/questions-to-ask-before-signing-a-solar-contract" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/questions-to-ask-before-signing-a-solar-contract" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/questions-to-ask-before-signing-a-solar-contract" />
   </url>
 </urlset>

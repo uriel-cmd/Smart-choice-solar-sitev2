@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "California Solar, Battery Storage, and Roofing",
     description:
       "Compare premium solar, battery storage, and roofing solutions with a locally owned California team focused on clean project planning, honest guidance, and fast estimates.",
-    url: "https://smartchoice.solar/",
+    url: "https://www.smartchoice.solar/",
     siteName: "Smart Choice Solar",
     locale: "en_US",
     alternateLocale: "es_US",

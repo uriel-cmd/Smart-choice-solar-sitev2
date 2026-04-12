@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Solar, Baterías y Techado en California",
     description:
       "Compara soluciones premium de solar, baterías y techado con un equipo local de California enfocado en planeación clara, orientación honesta y estimados rápidos.",
-    url: "https://smartchoice.solar/es",
+    url: "https://www.smartchoice.solar/es",
     siteName: "Smart Choice Solar",
     locale: "es_US",
     alternateLocale: "en_US",

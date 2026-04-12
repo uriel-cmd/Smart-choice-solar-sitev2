@@ -55,7 +55,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     "@type": "BlogPosting",
     headline: article.title,
     description: article.description,
-    image: [`https://smartchoice.solar${article.featuredImage}`],
+    image: [`https://www.smartchoice.solar${article.featuredImage}`],
     datePublished: article.publishDate,
     dateModified: article.publishDate,
     author: {
@@ -67,15 +67,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       name: "Smart Choice Solar",
       logo: {
         "@type": "ImageObject",
-        url: "https://smartchoice.solar/brand/smart-choice-solar-logo.svg"
+        url: "https://www.smartchoice.solar/brand/smart-choice-solar-logo.svg"
       }
     },
-    mainEntityOfPage: `https://smartchoice.solar/blog/${article.slug}`,
-    url: `https://smartchoice.solar/blog/${article.slug}`,
+    mainEntityOfPage: `https://www.smartchoice.solar/blog/${article.slug}`,
+    url: `https://www.smartchoice.solar/blog/${article.slug}`,
     isPartOf: {
       "@type": "Blog",
       name: "Smart Choice Solar Blog",
-      url: "https://smartchoice.solar/blog"
+      url: "https://www.smartchoice.solar/blog"
     },
     articleSection: article.category,
     inLanguage: "en-US"

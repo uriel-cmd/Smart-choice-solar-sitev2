@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import type { Locale } from "@/lib/i18n";
 
-const SITE_URL = "https://smartchoice.solar";
+const SITE_URL = "https://www.smartchoice.solar";
 const SITE_NAME = "Smart Choice Solar";
 
 type PageMetadata = {

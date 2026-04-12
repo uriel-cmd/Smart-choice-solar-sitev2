@@ -4,7 +4,7 @@ export const siteConfig = {
   tagline: "Premium solar, battery, and roofing guidance for California homeowners",
   description:
     "Smart Choice Solar helps California homeowners reduce power bills, strengthen outage resilience, and coordinate solar, battery storage, and roofing with one locally owned and operated team.",
-  url: "https://smartchoice.solar",
+  url: "https://www.smartchoice.solar",
   phoneDisplay: "(844) 787-6456",
   phoneHref: "+18447876456",
   email: "info@smartchoice.solar",
