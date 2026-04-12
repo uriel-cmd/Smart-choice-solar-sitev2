@@ -100,6 +100,7 @@ export function SiteHeader() {
         <div className="grid w-full max-w-sm grid-cols-2 gap-3">
           <a
             href={`tel:${siteConfig.phoneHref}`}
+            aria-label={`${t.header.call} ${siteConfig.phoneDisplay}`}
             className="rounded-full border border-slate/15 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(239,247,252,0.94))] px-4 py-3 text-center text-sm font-semibold text-slate shadow-[inset_0_1px_0_rgba(255,255,255,0.55)]"
           >
             {t.header.call} {siteConfig.phoneDisplay}
@@ -107,6 +108,7 @@ export function SiteHeader() {
           <button
             type="button"
             onClick={() => openContactEvent()}
+            aria-label={t.header.getInTouch}
             className="rounded-full bg-[linear-gradient(180deg,#73b5da_0%,#4d8fbb_100%)] px-4 py-3 text-center text-sm font-semibold text-white shadow-[0_14px_30px_rgba(77,143,187,0.26)]"
           >
             {t.header.getInTouch}
@@ -128,12 +130,14 @@ export function SiteHeader() {
           <button
             type="button"
             onClick={() => openContactEvent()}
+            aria-label={t.header.getInTouch}
             className="rounded-full bg-[linear-gradient(180deg,#73b5da_0%,#4d8fbb_100%)] px-9 py-4 text-base font-semibold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_14px_32px_rgba(77,143,187,0.3)] transition hover:brightness-95 xl:px-12 xl:py-5 xl:text-[17px]"
           >
             {t.header.getInTouch}
           </button>
           <a
             href={`tel:${siteConfig.phoneHref}`}
+            aria-label={`${t.header.call} ${siteConfig.phoneDisplay}`}
             className="rounded-full border border-slate/20 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(244,248,252,0.92))] px-9 py-4 text-base font-semibold text-slate shadow-[inset_0_1px_0_rgba(255,255,255,0.55)] transition hover:border-slate/30 hover:bg-white xl:px-12 xl:py-5 xl:text-[17px]"
           >
             {t.header.call} {siteConfig.phoneDisplay}
@@ -212,7 +216,7 @@ export function SiteHeader() {
             </span>
             <span>{t.nav.solutions}</span>
           </Link>
-          <a href={`tel:${siteConfig.phoneHref}`} className="flex flex-col items-center gap-1">
+          <a href={`tel:${siteConfig.phoneHref}`} aria-label={`${t.header.call} ${siteConfig.phoneDisplay}`} className="flex flex-col items-center gap-1">
             <BottomNavIcon icon="phone" />
             <span>{t.header.call}</span>
           </a>
@@ -222,6 +226,7 @@ export function SiteHeader() {
             onClick={() => setOpen((value) => !value)}
             aria-expanded={open}
             aria-controls="mobile-nav"
+            aria-label={t.header.menu}
           >
             <BottomNavIcon icon="menu" />
             <span>{t.header.menu}</span>

@@ -441,7 +441,7 @@ export function HomePageClient() {
                 {copy.stats.map((stat) => (
                   <div key={stat.label} className="glass-panel-strong rounded-[24px] p-4">
                     <div className="flex items-center gap-2 text-3xl font-semibold text-slate">
-                      {stat.value === "5/5" ? <span className="sun-accent text-2xl leading-none">★</span> : null}
+                      {stat.value === "5/5" ? <span aria-hidden="true" className="sun-accent text-2xl leading-none">★</span> : null}
                       <span>{stat.value}</span>
                     </div>
                     <p className="mt-2 text-sm leading-6 text-slate/75">{stat.label}</p>
@@ -460,12 +460,21 @@ export function HomePageClient() {
                         <h2 className="mt-2 text-2xl font-semibold text-slate">{copy.panelTitle}</h2>
                       </div>
                       <div className="inline-flex items-center gap-1.5 rounded-full border border-sun/35 bg-white/80 px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-slate">
-                        <span className="sun-accent text-sm leading-none">★</span>
+                        <span aria-hidden="true" className="sun-accent text-sm leading-none">★</span>
                         <span>{copy.rated}</span>
                       </div>
                     </div>
                     <div className="relative overflow-hidden rounded-[28px] border border-white/60 bg-white/70 shadow-[0_22px_70px_rgba(26,48,82,0.12)]">
-                      <Image src="/brand/smart-choice-solar-van-v3.png" alt="Smart Choice Solar branded service van" width={1456} height={816} priority className="h-auto w-full object-cover" />
+                      <Image
+                        src="/brand/smart-choice-solar-van-v3.png"
+                        alt="Smart Choice Solar branded service van"
+                        width={1456}
+                        height={734}
+                        priority
+                        quality={72}
+                        sizes="(max-width: 639px) calc(100vw - 48px), (max-width: 1023px) calc(100vw - 112px), 560px"
+                        className="h-auto w-full object-cover"
+                      />
                     </div>
                   </div>
                 </div>
