@@ -220,3 +220,38 @@ img {
 .reviews-marquee:hover .reviews-marquee-track {
   animation-play-state: paused;
 }
+
+@media (max-width: 767px) {
+  body {
+    background: linear-gradient(180deg, #f7fbfe 0%, #eef5fa 48%, #e8f1f7 100%);
+  }
+
+  .glass-panel,
+  .glass-panel-strong {
+    backdrop-filter: none;
+  }
+
+  .glass-panel {
+    box-shadow: 0 14px 30px rgba(26, 48, 82, 0.08);
+  }
+
+  .glass-panel-strong {
+    box-shadow: 0 16px 34px rgba(26, 48, 82, 0.1);
+  }
+
+  .grid-overlay,
+  .bg-halo {
+    display: none;
+  }
+}
+
+@supports (content-visibility: auto) {
+  .section-band,
+  .section-band-soft,
+  .section-band-dark,
+  .section-band-compare,
+  .section-band-confidence {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 960px;
+  }
+}
