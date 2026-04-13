@@ -137,7 +137,7 @@ export function ZipEstimatorController() {
       {contactOpen ? (
         <div className="fixed inset-0 z-[120] overflow-y-auto bg-ink/65 backdrop-blur-sm">
           <div className="flex min-h-[100dvh] items-start justify-center px-3 pb-[calc(112px+env(safe-area-inset-bottom))] pt-5 sm:items-center sm:p-6">
-            <div className="w-full max-w-2xl sm:rounded-[32px] sm:bg-white sm:p-6">
+            <div className="w-full max-w-2xl">
               <div className="sticky top-3 z-10 mb-3 flex justify-end sm:static sm:mb-4">
                 <button
                   type="button"
