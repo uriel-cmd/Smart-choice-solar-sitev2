@@ -53,9 +53,9 @@ export function LeadForm({ compact = false, onSubmitted }: { compact?: boolean; 
   return (
     <form
       onSubmit={handleSubmit}
-      className={`relative overflow-hidden rounded-[30px] border border-sky/20 bg-[linear-gradient(145deg,rgba(26,48,82,0.08),rgba(143,203,231,0.2))] shadow-[0_22px_60px_rgba(26,48,82,0.1)] ${compact ? "p-5" : "p-6 sm:p-8"}`}
+      className={`relative overflow-hidden rounded-[30px] border border-[#d7e8f2] bg-[linear-gradient(180deg,#eef6fb_0%,#e6f0f8_100%)] shadow-[0_22px_60px_rgba(26,48,82,0.1)] ${compact ? "p-5" : "p-6 sm:p-8"}`}
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.94),transparent_40%),radial-gradient(circle_at_88%_18%,rgba(143,203,231,0.2),transparent_24%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.68),transparent_38%),linear-gradient(180deg,rgba(255,255,255,0.14),transparent_42%)]" />
       <div className="relative">
       <div className="mb-5">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate/70">{t.leadForm.eyebrow}</p>
