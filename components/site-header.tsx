@@ -109,7 +109,7 @@ export function SiteHeader() {
           </div>
         </div>
       </div>
-      <div className={`flex w-full flex-col items-center px-4 transition-all duration-200 lg:hidden ${isScrolled ? "gap-2 py-2.5" : "gap-3 py-4"}`}>
+      <div className={`flex w-full flex-col items-center px-4 transition-all duration-200 lg:hidden ${isScrolled ? "max-h-0 overflow-hidden py-0 opacity-0 pointer-events-none" : "gap-3 py-4 opacity-100"}`}>
         <Logo variant="mobile" compact={isScrolled} />
         <div className={`grid w-full max-w-sm grid-cols-2 transition-all duration-200 ${isScrolled ? "gap-2" : "gap-3"}`}>
           <a
@@ -127,6 +127,21 @@ export function SiteHeader() {
           >
             {t.header.getInTouch}
           </button>
+        </div>
+      </div>
+      <div className={`fixed inset-x-0 top-0 z-[75] border-b border-slate/10 bg-white/96 shadow-[0_10px_24px_rgba(26,48,82,0.12)] backdrop-blur-xl transition-all duration-200 lg:hidden ${isScrolled ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"}`}>
+        <div className="flex items-center justify-between gap-3 px-4 py-2.5">
+          <Logo variant="mobile" compact />
+          <div className="flex shrink-0 items-center gap-2">
+            <button
+              type="button"
+              onClick={() => openContactEvent()}
+              aria-label={t.header.getInTouch}
+              className="rounded-full bg-[linear-gradient(180deg,#73b5da_0%,#4d8fbb_100%)] px-3.5 py-2 text-[13px] font-semibold text-white shadow-[0_10px_22px_rgba(77,143,187,0.22)]"
+            >
+              {t.header.getInTouch}
+            </button>
+          </div>
         </div>
       </div>
       <div className={`hidden w-full items-center px-8 transition-all duration-200 lg:flex xl:px-10 2xl:px-12 ${isScrolled ? "min-h-24 gap-6" : "min-h-32 gap-8"}`}>
