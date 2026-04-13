@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { useLanguage, useTranslation } from "@/components/language-provider";
 import { Logo } from "@/components/logo";
@@ -64,13 +64,27 @@ function BottomNavIcon({ icon }: { icon: "home" | "reviews" | "sun" | "phone" | 
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const { language, setLanguage } = useLanguage();
   const t = useTranslation();
 
+  useEffect(() => {
+    const onScroll = () => {
+      setIsScrolled(window.scrollY > 24);
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+
   return (
-    <header className="sticky top-0 z-50 border-b border-slate/10 bg-white lg:bg-white/92 lg:backdrop-blur-xl">
-      <div className="border-b border-white/10 bg-slate text-white">
-        <div className="relative flex min-h-8 items-center justify-center px-4 text-[10px] font-semibold uppercase tracking-[0.2em] text-white/80 sm:min-h-9 sm:text-[11px] lg:min-h-11 lg:text-xs lg:tracking-[0.22em]">
+    <header className={`sticky top-0 z-50 border-b border-slate/10 bg-white transition-[box-shadow,background-color] duration-200 ${isScrolled ? "shadow-[0_10px_30px_rgba(26,48,82,0.12)] lg:bg-white/96" : "lg:bg-white/92"} lg:backdrop-blur-xl`}>
+      <div className={`border-b border-white/10 bg-slate text-white transition-all duration-200 ${isScrolled ? "max-h-0 overflow-hidden opacity-0 lg:max-h-9 lg:opacity-100" : "max-h-12 opacity-100"}`}>
+        <div className={`relative flex items-center justify-center px-4 text-[10px] font-semibold uppercase tracking-[0.2em] text-white/80 transition-all duration-200 sm:text-[11px] lg:text-xs lg:tracking-[0.22em] ${isScrolled ? "lg:min-h-9" : "min-h-8 sm:min-h-9 lg:min-h-11"}`}>
           <p>{t.header.topStrip}</p>
           <div className="absolute right-8 top-1/2 hidden -translate-y-1/2 lg:block">
             <label className="sr-only" htmlFor="desktop-language-select">
@@ -95,13 +109,13 @@ export function SiteHeader() {
           </div>
         </div>
       </div>
-      <div className="flex w-full flex-col items-center gap-3 px-4 py-4 lg:hidden">
-        <Logo variant="mobile" />
-        <div className="grid w-full max-w-sm grid-cols-2 gap-3">
+      <div className={`flex w-full flex-col items-center px-4 transition-all duration-200 lg:hidden ${isScrolled ? "gap-2 py-2.5" : "gap-3 py-4"}`}>
+        <Logo variant="mobile" compact={isScrolled} />
+        <div className={`grid w-full max-w-sm grid-cols-2 transition-all duration-200 ${isScrolled ? "gap-2" : "gap-3"}`}>
           <a
             href={`tel:${siteConfig.phoneHref}`}
             aria-label={`${t.header.call} ${siteConfig.phoneDisplay}`}
-            className="rounded-full border border-slate/15 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(239,247,252,0.94))] px-4 py-3 text-center text-sm font-semibold text-slate shadow-[inset_0_1px_0_rgba(255,255,255,0.55)]"
+            className={`rounded-full border border-slate/15 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(239,247,252,0.94))] text-center font-semibold text-slate shadow-[inset_0_1px_0_rgba(255,255,255,0.55)] transition-all duration-200 ${isScrolled ? "px-3 py-2.5 text-[13px]" : "px-4 py-3 text-sm"}`}
           >
             {t.header.call} {siteConfig.phoneDisplay}
           </a>
@@ -109,15 +123,15 @@ export function SiteHeader() {
             type="button"
             onClick={() => openContactEvent()}
             aria-label={t.header.getInTouch}
-            className="rounded-full bg-[linear-gradient(180deg,#73b5da_0%,#4d8fbb_100%)] px-4 py-3 text-center text-sm font-semibold text-white shadow-[0_14px_30px_rgba(77,143,187,0.26)]"
+            className={`rounded-full bg-[linear-gradient(180deg,#73b5da_0%,#4d8fbb_100%)] text-center font-semibold text-white shadow-[0_14px_30px_rgba(77,143,187,0.26)] transition-all duration-200 ${isScrolled ? "px-3 py-2.5 text-[13px]" : "px-4 py-3 text-sm"}`}
           >
             {t.header.getInTouch}
           </button>
         </div>
       </div>
-      <div className="hidden min-h-32 w-full items-center gap-8 px-8 lg:flex xl:px-10 2xl:px-12">
+      <div className={`hidden w-full items-center px-8 transition-all duration-200 lg:flex xl:px-10 2xl:px-12 ${isScrolled ? "min-h-24 gap-6" : "min-h-32 gap-8"}`}>
         <div className="shrink-0">
-          <Logo />
+          <Logo compact={isScrolled} />
         </div>
         <nav className="hidden flex-1 items-center justify-center gap-6 whitespace-nowrap lg:flex xl:gap-8 2xl:gap-10">
           {primaryNav.map((item) => (
@@ -233,8 +247,8 @@ export function SiteHeader() {
           </button>
         </div>
       </nav>
-      <div className="hidden border-t border-slate/8 bg-slate/[0.03] lg:block">
-        <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 flex min-h-12 items-center gap-3 overflow-x-auto text-xs font-semibold uppercase tracking-[0.18em] text-slate/70">
+      <div className={`hidden border-t border-slate/8 bg-slate/[0.03] transition-all duration-200 lg:block ${isScrolled ? "max-h-0 overflow-hidden opacity-0" : "max-h-16 opacity-100"}`}>
+        <div className="flex min-h-12 w-full items-center gap-3 overflow-x-auto px-4 text-xs font-semibold uppercase tracking-[0.18em] text-slate/70 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
           <span className="shrink-0 text-slate/55">{t.nav.exploreServices}</span>
           {serviceNav.map((item) => (
             <Link
