@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 
 import { useLanguage } from "@/components/language-provider";
@@ -18,15 +19,18 @@ export function Logo({ variant = "desktop" }: LogoProps) {
       : "relative h-8 w-[180px] overflow-hidden sm:h-10 sm:w-[290px] lg:h-[102px] lg:w-[700px]";
   const imageClassName =
     variant === "mobile"
-      ? "absolute left-1/2 top-1/2 h-[164px] w-auto max-w-none -translate-x-1/2 -translate-y-1/2 sm:h-[190px]"
-      : "absolute left-0 top-1/2 h-[96px] w-auto max-w-none -translate-y-1/2 sm:h-[132px] lg:h-[308px]";
+      ? "object-contain object-center"
+      : "object-contain object-left";
 
   return (
     <Link href={localizeHref("/", language)} className="inline-flex shrink-0 items-center" aria-label="Smart Choice Solar home">
       <div className={frameClassName}>
-        <img
-          src="/brand/smart-choice-solar-logo.svg"
+        <Image
+          src="/brand/smart-choice-solar-logo-1200.png"
           alt="Smart Choice Solar"
+          fill
+          priority
+          sizes={variant === "mobile" ? "260px" : "(max-width: 639px) 180px, (max-width: 1023px) 290px, 700px"}
           className={imageClassName}
         />
       </div>
