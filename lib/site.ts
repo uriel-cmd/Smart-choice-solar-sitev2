@@ -21,6 +21,7 @@ export const siteConfig = {
   },
   serviceAreas: [
     "Lancaster",
+    "Palmdale",
     "Antelope Valley",
     "Los Angeles",
     "San Diego",
