@@ -157,11 +157,11 @@ export function LancasterServiceAreaPageClient() {
       </div>
 
       <div className="mb-12 overflow-hidden rounded-[30px] border border-sky/20 bg-[linear-gradient(145deg,rgba(26,48,82,0.98),rgba(48,94,132,0.96))] p-6 text-white shadow-[0_24px_60px_rgba(26,48,82,0.2)] sm:p-8">
-        <p className="!mt-0 text-xs font-semibold uppercase tracking-[0.2em] text-white/65">{t.utilityEyebrow}</p>
+        <p className="!mt-0 text-xs font-semibold uppercase tracking-[0.2em] !text-white/70">{t.utilityEyebrow}</p>
         <h2 className="mt-3 text-3xl font-semibold tracking-tight !text-white sm:text-4xl">{t.utilityTitle}</h2>
-        <div className="mt-6 grid gap-5 text-base leading-8 text-white/82 lg:grid-cols-2">
-          <p className="!mt-0 !text-white/82">{t.utilityP1}</p>
-          <p className="!mt-0 !text-white/82">{t.utilityP2}</p>
+        <div className="mt-6 grid gap-5 text-base leading-8 lg:grid-cols-2">
+          <p className="!mt-0 !text-white/80">{t.utilityP1}</p>
+          <p className="!mt-0 !text-white/80">{t.utilityP2}</p>
         </div>
       </div>
 
