@@ -422,7 +422,7 @@ export function HomePageClient() {
               <p className="subheadline mt-6 max-w-2xl text-balance">{copy.heroDescription}</p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link href={localizeHref("/?estimator=1", language)} className="accent-button">{copy.startEstimate}</Link>
-                <Link href={localizeHref("/service-areas", language)} className="rounded-full border border-slate/12 bg-white/90 px-6 py-4 text-center text-sm font-semibold text-slate shadow-soft">
+                <Link href={localizeHref("/service-areas/lancaster-ca", language)} className="rounded-full border border-slate/12 bg-white/90 px-6 py-4 text-center text-sm font-semibold text-slate shadow-soft">
                   {copy.checkArea}
                 </Link>
               </div>
