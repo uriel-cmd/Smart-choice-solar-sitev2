@@ -11,7 +11,7 @@ import { siteConfig } from "@/lib/site";
 const copy = {
   en: {
     eyebrow: "Palmdale, California",
-    title: "Solar and battery planning shaped around Palmdale homes.",
+    title: "Solar and Battery Storage in Palmdale, CA",
     description: "Our nearby Lancaster-based team helps Palmdale homeowners plan solar, storage, and roof work around SCE usage, High Desert conditions, and the City’s permit process.",
     localTitle: "A Palmdale project starts with the home, the bill, and the permit path.",
     localBody: "Homes across Rancho Vista, Anaverde, Joshua Hills, and east and west Palmdale do not share one roof type or energy profile. We review summer cooling demand, roof age and orientation, shade, afternoon wind exposure, and future loads before recommending equipment.",
