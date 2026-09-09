@@ -19,6 +19,9 @@ const copy = {
     localTitle: "Lancaster & Antelope Valley",
     localBody: "Start with our local guide for Lancaster solar, battery storage, roofing coordination, utility considerations, and proposal reviews.",
     localLink: "Explore Lancaster services",
+    palmdaleTitle: "Palmdale",
+    palmdaleBody: "Explore Palmdale solar, battery storage, SCE planning, High Desert design considerations, and the City permit process.",
+    palmdaleLink: "Explore Palmdale services",
     bottom: "Every California ZIP code is considered serviceable for estimate intake and project review. Reach out and we will help confirm the best next step for your property and project type.",
     ctaEyebrow: "Coverage Check",
     ctaTitle: "The fastest way to confirm fit is to enter your ZIP and start the estimate.",
@@ -36,6 +39,9 @@ const copy = {
     localTitle: "Lancaster y Antelope Valley",
     localBody: "Comienza con nuestra guía local de solar, baterías, coordinación de techo, utilidad y revisión de propuestas en Lancaster.",
     localLink: "Explorar servicios en Lancaster",
+    palmdaleTitle: "Palmdale",
+    palmdaleBody: "Explora solar, baterías, planificación con SCE, condiciones del High Desert y permisos de la ciudad de Palmdale.",
+    palmdaleLink: "Explorar servicios en Palmdale",
     bottom: "Todo código postal de California se considera elegible para intake de estimado y revisión de proyecto. Contáctanos y te ayudaremos a confirmar el mejor siguiente paso para tu propiedad.",
     ctaEyebrow: "Verificación de Cobertura",
     ctaTitle: "La forma más rápida de confirmar compatibilidad es ingresar tu código postal y comenzar el estimado.",
@@ -57,12 +63,20 @@ export function ServiceAreasPageClient() {
           <div className="glass-panel-strong rounded-[32px] p-8 sm:p-10">
             <h2 className="text-2xl font-semibold tracking-tight text-slate">{t.sectionTitle}</h2>
             <p className="mt-4 max-w-3xl text-sm leading-7 text-slate/80">{t.sectionBody}</p>
-            <Link href={localizeHref("/service-areas/lancaster-ca", language)} className="group mt-7 block rounded-[26px] border border-sky/30 bg-[linear-gradient(135deg,rgba(255,255,255,0.98),rgba(226,241,249,0.94))] p-6 shadow-soft transition hover:-translate-y-0.5 hover:border-sky/55">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate/60">{language === "en" ? "Featured local market" : "Mercado local destacado"}</p>
-              <h3 className="mt-2 text-2xl font-semibold text-slate">{t.localTitle}</h3>
-              <p className="mt-3 max-w-3xl text-sm leading-7 text-slate/78">{t.localBody}</p>
-              <span className="mt-5 inline-flex text-sm font-semibold text-slate group-hover:text-[#3f87ad]">{t.localLink} →</span>
-            </Link>
+            <div className="mt-7 grid gap-4 lg:grid-cols-2">
+              <Link href={localizeHref("/service-areas/lancaster-ca", language)} className="group block rounded-[26px] border border-sky/30 bg-[linear-gradient(135deg,rgba(255,255,255,0.98),rgba(226,241,249,0.94))] p-6 shadow-soft transition hover:-translate-y-0.5 hover:border-sky/55">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate/60">{language === "en" ? "Featured local market" : "Mercado local destacado"}</p>
+                <h3 className="mt-2 text-2xl font-semibold text-slate">{t.localTitle}</h3>
+                <p className="mt-3 text-sm leading-7 text-slate/78">{t.localBody}</p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-slate group-hover:text-[#3f87ad]">{t.localLink} →</span>
+              </Link>
+              <Link href={localizeHref("/service-areas/palmdale-ca", language)} className="group block rounded-[26px] border border-sky/30 bg-[linear-gradient(135deg,rgba(255,255,255,0.98),rgba(226,241,249,0.94))] p-6 shadow-soft transition hover:-translate-y-0.5 hover:border-sky/55">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate/60">{language === "en" ? "Featured local market" : "Mercado local destacado"}</p>
+                <h3 className="mt-2 text-2xl font-semibold text-slate">{t.palmdaleTitle}</h3>
+                <p className="mt-3 text-sm leading-7 text-slate/78">{t.palmdaleBody}</p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-slate group-hover:text-[#3f87ad]">{t.palmdaleLink} →</span>
+              </Link>
+            </div>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {siteConfig.serviceAreas.map((area) => <div key={area} className="rounded-[22px] border border-line bg-white/80 px-4 py-4 text-sm font-medium text-slate">{area}</div>)}
             </div>

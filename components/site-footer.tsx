@@ -86,8 +86,8 @@ export function SiteFooter() {
             <h2 className="text-sm font-semibold uppercase tracking-[0.12em] text-white">{t.footer.popularLocations}</h2>
             <div className="mt-6 grid grid-cols-2 gap-x-8 gap-y-5 text-[15px] text-white/80 lg:grid-cols-2">
               {siteConfig.serviceAreas.slice(0, 8).map((area) => (
-                area === "Lancaster" ? (
-                  <Link key={area} href={localizeHref("/service-areas/lancaster-ca", language)} className="font-semibold text-white transition hover:text-sky">
+                area === "Lancaster" || area === "Palmdale" ? (
+                  <Link key={area} href={localizeHref(`/service-areas/${area.toLowerCase()}-ca`, language)} className="font-semibold text-white transition hover:text-sky">
                     {area}
                   </Link>
                 ) : <p key={area}>{area}</p>
