@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata = buildMetadata({
   title: "Solar Installation, Battery Storage & Permitting in Palmdale, CA",
   description:
-    "Palmdale solar and battery planning built around SCE usage, High Desert conditions, roof readiness, and the City of Palmdale permit path.",
+    "Custom solar and battery planning shaped specifically for Palmdale Homes.",
   path: "/service-areas/palmdale-ca",
   keywords: [
     "solar installation Palmdale CA",
