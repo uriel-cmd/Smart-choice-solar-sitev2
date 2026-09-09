@@ -19,7 +19,7 @@ export const metadata = buildMetadata({
 
 const faqs = [
   ["Does Smart Choice Solar serve Lancaster, California?", "Yes. Smart Choice Solar is based in Lancaster and serves homeowners in Lancaster and surrounding Antelope Valley communities, subject to project scope and address verification."],
-  ["Can you help both Lancaster Energy and SCE customers?", "We begin by confirming the utility shown on the homeowner’s bill, then review usage and the applicable project path before making a recommendation."],
+  ["How do Lancaster Energy and SCE work together?", "Lancaster Energy may provide electricity generation, while Southern California Edison delivers the power and sends the bill. We review both sets of charges and the home’s usage before making a recommendation."],
   ["Should I consider a battery with solar in Lancaster?", "It depends on evening usage, outage priorities, rate structure, available incentives, and budget. We model those factors instead of automatically adding or excluding storage."],
   ["What if my roof may need replacement?", "We recommend reviewing roof condition before final solar design. Coordinating roofing and solar early can reduce avoidable rework and protect the long-term project."],
   ["Can you review another company’s solar proposal?", "Yes. We can help compare system size, estimated production, battery capacity, equipment assumptions, financing structure, and what is included after installation."]

@@ -18,8 +18,8 @@ const copy = {
     localBody:
       "Lancaster homeowners deal with intense summer cooling demand, strong year-round sun, different utility structures, and roofs that need to be evaluated before equipment is designed. We start with those realities instead of treating the project like a generic California quote.",
     facts: [
-      ["Local office", "1105 W Avenue M, Suite D, Lancaster, CA 93534"],
-      ["Utility-aware", "Planning for Lancaster Energy and Southern California Edison customers"],
+      ["Local office", "1105 W Avenue M STE D, Lancaster, CA 93534"],
+      ["Utility-aware", "Planning for Lancaster Energy generation with Southern California Edison delivery and billing"],
       ["Bilingual support", "Clear project guidance in English and Spanish"]
     ],
     servicesEyebrow: "Local Home-Energy Services",
@@ -33,7 +33,7 @@ const copy = {
     utilityEyebrow: "Lancaster Utility Planning",
     utilityTitle: "The utility shown on your bill changes the conversation.",
     utilityP1:
-      "Homes in and around Lancaster may receive electric service through Lancaster Energy or Southern California Edison. Before recommending a system, we confirm the serving utility, rate structure, recent usage, and whether the homeowner is planning for an EV, electric HVAC, or other future load.",
+      "Lancaster homes may receive electricity generation from Lancaster Energy, while Southern California Edison provides delivery and billing. Before recommending a system, we confirm the generation provider, rate structure, recent usage, and whether the homeowner is planning for an EV, electric HVAC, or other future load.",
     utilityP2:
       "That review matters because the right solar-and-battery strategy depends on when the home uses power—not only how many kilowatt-hours appear on the annual bill.",
     processEyebrow: "How We Plan A Lancaster Project",
@@ -51,7 +51,7 @@ const copy = {
     faqTitle: "Questions local homeowners ask before requesting a proposal.",
     faqs: [
       ["Does Smart Choice Solar serve Lancaster, California?", "Yes. Smart Choice Solar is based in Lancaster and serves homeowners in Lancaster and surrounding Antelope Valley communities, subject to project scope and address verification."],
-      ["Can you help both Lancaster Energy and SCE customers?", "We begin by confirming the utility shown on the homeowner’s bill, then review usage and the applicable project path before making a recommendation."],
+      ["How do Lancaster Energy and SCE work together?", "Lancaster Energy may provide electricity generation, while Southern California Edison delivers the power and sends the bill. We review both sets of charges and the home’s usage before making a recommendation."],
       ["Should I consider a battery with solar in Lancaster?", "It depends on evening usage, outage priorities, rate structure, available incentives, and budget. We model those factors instead of automatically adding or excluding storage."],
       ["What if my roof may need replacement?", "We recommend reviewing roof condition before final solar design. Coordinating roofing and solar early can reduce avoidable rework and protect the long-term project."],
       ["Can you review another company’s solar proposal?", "Yes. We can help compare system size, estimated production, battery capacity, equipment assumptions, financing structure, and what is included after installation."]
@@ -68,8 +68,8 @@ const copy = {
     localBody:
       "Los propietarios de Lancaster enfrentan alta demanda de aire acondicionado en verano, abundante sol, distintas estructuras de servicio eléctrico y techos que deben revisarse antes de diseñar el sistema. Empezamos con esas realidades en lugar de tratar el proyecto como una cotización genérica de California.",
     facts: [
-      ["Oficina local", "1105 W Avenue M, Suite D, Lancaster, CA 93534"],
-      ["Conocimiento de utilidad", "Planificación para clientes de Lancaster Energy y Southern California Edison"],
+      ["Oficina local", "1105 W Avenue M STE D, Lancaster, CA 93534"],
+      ["Conocimiento de utilidad", "Planificación que considera la generación de Lancaster Energy y la entrega y facturación de Southern California Edison"],
       ["Atención bilingüe", "Orientación clara del proyecto en inglés y español"]
     ],
     servicesEyebrow: "Servicios Locales De Energía",
@@ -83,7 +83,7 @@ const copy = {
     utilityEyebrow: "Planificación De Utilidad En Lancaster",
     utilityTitle: "La compañía que aparece en tu factura cambia la conversación.",
     utilityP1:
-      "Los hogares en Lancaster y sus alrededores pueden recibir servicio eléctrico de Lancaster Energy o Southern California Edison. Antes de recomendar un sistema, confirmamos la utilidad, estructura tarifaria, consumo reciente y planes futuros como vehículo eléctrico o HVAC eléctrico.",
+      "Los hogares de Lancaster pueden recibir generación eléctrica de Lancaster Energy, mientras Southern California Edison se encarga de la entrega y facturación. Antes de recomendar un sistema, confirmamos el proveedor de generación, la estructura tarifaria, el consumo reciente y planes futuros como vehículo eléctrico o HVAC eléctrico.",
     utilityP2:
       "Esa revisión importa porque la estrategia correcta de solar y batería depende de cuándo usa energía el hogar, no solo de los kilovatios-hora que aparecen en la factura anual.",
     processEyebrow: "Cómo Planeamos Un Proyecto En Lancaster",
@@ -101,7 +101,7 @@ const copy = {
     faqTitle: "Lo que preguntan los propietarios locales antes de solicitar una propuesta.",
     faqs: [
       ["¿Smart Choice Solar atiende Lancaster, California?", "Sí. Smart Choice Solar tiene su base en Lancaster y atiende a propietarios en Lancaster y comunidades cercanas del Antelope Valley, según el alcance y la verificación de dirección."],
-      ["¿Pueden ayudar a clientes de Lancaster Energy y SCE?", "Primero confirmamos la utilidad que aparece en la factura, luego revisamos el consumo y la ruta aplicable antes de recomendar un sistema."],
+      ["¿Cómo trabajan juntos Lancaster Energy y SCE?", "Lancaster Energy puede proporcionar la generación eléctrica, mientras Southern California Edison entrega la energía y envía la factura. Revisamos ambos cargos y el consumo del hogar antes de hacer una recomendación."],
       ["¿Debo considerar una batería junto con solar en Lancaster?", "Depende del consumo nocturno, prioridades durante apagones, tarifa, incentivos disponibles y presupuesto. Modelamos esos factores antes de recomendar almacenamiento."],
       ["¿Qué pasa si mi techo necesita reemplazo?", "Recomendamos revisar el techo antes del diseño final. Coordinar techo y solar desde el principio puede reducir retrabajos y proteger el proyecto a largo plazo."],
       ["¿Pueden revisar la propuesta solar de otra compañía?", "Sí. Podemos comparar tamaño, producción estimada, capacidad de batería, equipos, financiamiento y lo que incluye el servicio después de instalar."]
