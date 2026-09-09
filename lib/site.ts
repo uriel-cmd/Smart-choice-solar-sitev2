@@ -20,6 +20,8 @@ export const siteConfig = {
     longitude: -118.13674
   },
   serviceAreas: [
+    "Lancaster",
+    "Antelope Valley",
     "Los Angeles",
     "San Diego",
     "Bay Area",
