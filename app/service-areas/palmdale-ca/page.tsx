@@ -40,7 +40,8 @@ export default function PalmdaleServiceAreaPage() {
         areaServed: {
           "@type": "City",
           name: "Palmdale, CA",
-          geo: { "@type": "GeoCoordinates", latitude: 34.5794, longitude: -118.1165 }
+          geo: { "@type": "GeoCoordinates", latitude: 34.5794, longitude: -118.1165 },
+          containedInPlace: { "@type": "State", name: "California" }
         },
         serviceType: ["Residential solar", "Battery storage", "Roofing coordination", "Solar proposal review"]
       },
@@ -50,6 +51,7 @@ export default function PalmdaleServiceAreaPage() {
         name: siteConfig.name,
         url: siteConfig.url,
         telephone: siteConfig.phoneHref,
+        sameAs: siteConfig.businessProfiles,
         address: {
           "@type": "PostalAddress",
           streetAddress: siteConfig.address.streetAddress,
