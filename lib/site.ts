@@ -9,7 +9,7 @@ export const siteConfig = {
   phoneHref: "+18447876456",
   email: "info@smartchoice.solar",
   address: {
-    streetAddress: "1105 W Avenue M STE D",
+    streetAddress: "1105 W Avenue M Unit D",
     addressLocality: "Lancaster",
     addressRegion: "CA",
     postalCode: "93534",

@@ -18,7 +18,7 @@ const copy = {
     localBody:
       "Lancaster homeowners deal with intense summer cooling demand, strong year-round sun, different utility structures, and roofs that need to be evaluated before equipment is designed. We start with those realities instead of treating the project like a generic California quote.",
     facts: [
-      ["Local office", "1105 W Avenue M STE D, Lancaster, CA 93534"],
+      ["Local office", "1105 W Avenue M Unit D, Lancaster, CA 93534"],
       ["Utility-aware", "Planning for Lancaster Energy generation with Southern California Edison delivery and billing"],
       ["Bilingual support", "Clear project guidance in English and Spanish"]
     ],
@@ -68,7 +68,7 @@ const copy = {
     localBody:
       "Los propietarios de Lancaster enfrentan alta demanda de aire acondicionado en verano, abundante sol, distintas estructuras de servicio eléctrico y techos que deben revisarse antes de diseñar el sistema. Empezamos con esas realidades en lugar de tratar el proyecto como una cotización genérica de California.",
     facts: [
-      ["Oficina local", "1105 W Avenue M STE D, Lancaster, CA 93534"],
+      ["Oficina local", "1105 W Avenue M Unit D, Lancaster, CA 93534"],
       ["Conocimiento de utilidad", "Planificación que considera la generación de Lancaster Energy y la entrega y facturación de Southern California Edison"],
       ["Atención bilingüe", "Orientación clara del proyecto en inglés y español"]
     ],

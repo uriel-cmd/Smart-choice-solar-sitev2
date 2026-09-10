@@ -17,7 +17,7 @@ const copy = {
     localTitle: "A Palmdale project starts with the home, the bill, and the permit path.",
     localBody: "Homes across Rancho Vista, Anaverde, Joshua Hills, and east and west Palmdale do not share one roof type or energy profile. We review summer cooling demand, roof age and orientation, shade, afternoon wind exposure, and future loads before recommending equipment.",
     facts: [
-      ["Nearby team", "Based at 1105 W Avenue M STE D in neighboring Lancaster"],
+      ["Nearby team", "Based at 1105 W Avenue M Unit D in neighboring Lancaster"],
       ["SCE planning", "System sizing based on the home’s Southern California Edison usage and rate plan"],
       ["Palmdale permits", "SolarAPP+ or Accela routing based on the home and project scope"]
     ],
@@ -64,7 +64,7 @@ const copy = {
     localTitle: "Un proyecto en Palmdale comienza con la casa, la factura y el tipo de permiso.",
     localBody: "Los hogares de Rancho Vista, Anaverde, Joshua Hills y el este y oeste de Palmdale no comparten un solo tipo de techo ni perfil de consumo. Revisamos la demanda de aire acondicionado, edad y orientación del techo, sombra, viento de la tarde y cargas futuras antes de recomendar equipos.",
     facts: [
-      ["Equipo cercano", "Ubicado en 1105 W Avenue M STE D en la vecina ciudad de Lancaster"],
+      ["Equipo cercano", "Ubicado en 1105 W Avenue M Unit D en la vecina ciudad de Lancaster"],
       ["Planificación con SCE", "Tamaño del sistema basado en el consumo y tarifa de Southern California Edison"],
       ["Permisos de Palmdale", "Ruta SolarAPP+ o Accela según la vivienda y el alcance"]
     ],
