@@ -80,6 +80,6 @@ export function getLocalBusinessSchema() {
         }
       ]
     },
-    sameAs: Object.values(siteConfig.socials)
+    sameAs: siteConfig.businessProfiles
   };
 }

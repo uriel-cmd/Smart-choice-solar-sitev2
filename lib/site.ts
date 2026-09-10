@@ -39,6 +39,12 @@ export const siteConfig = {
     instagram: "https://www.instagram.com/",
     linkedin: "https://www.linkedin.com/"
   },
+  businessProfiles: [
+    "https://share.google/i9jCrbXMhMmuIxb46",
+    "https://www.facebook.com/profile.php?id=61550092382542",
+    "https://www.instagram.com/smartchoice.solar/",
+    "https://www.yelp.com/biz/smart-choice-solar-lancaster"
+  ],
   seo: {
     defaultTitle: "California Solar, Battery Storage, and Roofing | Smart Choice Solar",
     titleTemplate: "%s | Smart Choice Solar",
