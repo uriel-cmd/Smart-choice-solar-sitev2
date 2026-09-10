@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import { ContentPage } from "@/components/content-page";
 import { useLanguage } from "@/components/language-provider";
+import { openEstimatorEvent } from "@/components/zip-estimator-controller";
 import { localizeHref } from "@/lib/i18n";
 import { siteConfig } from "@/lib/site";
 
@@ -48,7 +49,9 @@ const copy = {
       ["Does Smart Choice Solar serve Palmdale?", "Yes. Our nearby Lancaster-based team serves Palmdale homeowners, subject to address and project review."],
       ["Who provides electricity in Palmdale?", "Palmdale homes are generally served by Southern California Edison. We review the home’s SCE usage and rate plan before sizing solar or storage."],
       ["How are residential solar permits handled in Palmdale?", "The City offers SolarAPP+ for qualifying rooftop-only projects on existing single-family and duplex homes. Projects with batteries and projects on new residences follow the Accela permitting path."],
-      ["Should I add a battery?", "That depends on backup priorities, evening demand, desired runtime, available incentives, and budget. We size storage around those goals."],
+      ["How much does NEM 3.0 affect solar savings in Palmdale?", "For new SCE solar customers, the Solar Billing Plan—also called the Net Billing Tariff or NEM 3.0—usually values exported energy below the retail electricity rate. Using more solar in the home and shifting energy into evening hours can therefore matter more than under older NEM plans. Actual savings depend on usage, system size, rate plan, and export timing."],
+      ["Do I need a battery for solar in Palmdale under SCE?", "No. SCE does not require a battery to install solar. Storage can hold excess daytime production for evening use, improve self-consumption, and provide backup when designed for it, so we compare solar-only and solar-plus-battery options for the home."],
+      ["What affects battery size for a Palmdale home?", "Backup priorities, evening demand, desired runtime, the home’s electrical setup, available incentives, and budget all affect battery capacity. We size storage around those goals."],
       ["What local conditions affect the design?", "Summer cooling loads, afternoon winds, roof condition, shade, orientation, and planned electrical loads all affect system design."]
     ],
     officeLabel: "Nearby Antelope Valley office",
@@ -93,7 +96,9 @@ const copy = {
       ["¿Smart Choice Solar atiende Palmdale?", "Sí. Nuestro equipo cercano en Lancaster atiende hogares de Palmdale, sujeto a revisión de la dirección y el proyecto."],
       ["¿Quién proporciona la electricidad en Palmdale?", "Los hogares de Palmdale generalmente reciben servicio de Southern California Edison. Revisamos el consumo y la tarifa de SCE antes de dimensionar solar o batería."],
       ["¿Cómo se tramitan los permisos solares en Palmdale?", "La ciudad ofrece SolarAPP+ para proyectos elegibles solo de solar en viviendas existentes unifamiliares y dúplex. Proyectos con batería y viviendas nuevas usan Accela."],
-      ["¿Debo agregar una batería?", "Depende de prioridades de respaldo, consumo nocturno, tiempo deseado, incentivos disponibles y presupuesto."],
+      ["¿Cuánto afecta NEM 3.0 los ahorros solares en Palmdale?", "Para clientes nuevos de solar con SCE, el Solar Billing Plan, también llamado Net Billing Tariff o NEM 3.0, generalmente valora la energía exportada por debajo de la tarifa minorista. Usar más energía solar en casa y trasladarla a las horas de la tarde puede ser más importante. Los ahorros dependen del consumo, tamaño del sistema, tarifa y horario de exportación."],
+      ["¿Necesito una batería para instalar solar en Palmdale con SCE?", "No. SCE no requiere una batería para instalar solar. Una batería puede guardar producción del día para usarla por la tarde, aumentar el autoconsumo y proporcionar respaldo cuando el sistema está diseñado para ello."],
+      ["¿Qué determina el tamaño de una batería para una casa en Palmdale?", "Las prioridades de respaldo, consumo nocturno, tiempo deseado, sistema eléctrico, incentivos disponibles y presupuesto determinan la capacidad adecuada."],
       ["¿Qué condiciones locales afectan el diseño?", "El aire acondicionado en verano, viento de la tarde, techo, sombra, orientación y cargas futuras afectan el diseño."]
     ],
     officeLabel: "Oficina cercana en Antelope Valley",
@@ -108,7 +113,7 @@ export function PalmdaleServiceAreaPageClient() {
   return (
     <ContentPage eyebrow={t.eyebrow} title={t.title} description={t.description}>
       <div className="mb-12 overflow-hidden rounded-[30px] border border-sky/20 bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(240,248,252,0.94))] shadow-[0_24px_60px_rgba(26,48,82,0.1)]">
-        <Image src="/brand/solar-modern-home-external.svg" alt={language === "en" ? "Palmdale home with rooftop solar panels" : "Casa en Palmdale con paneles solares"} width={1600} height={980} className="h-auto w-full object-cover" priority />
+        <Image src="/brand/solar-modern-home-external.svg" alt="Solar and Tesla Powerwall installation in Palmdale, CA" width={1600} height={980} className="h-auto w-full object-cover" priority />
         <div className="p-6 sm:p-8">
           <h2 className="mt-0 text-3xl font-semibold tracking-tight text-slate sm:text-4xl">{t.localTitle}</h2>
           <p>{t.localBody}</p>
@@ -140,7 +145,7 @@ export function PalmdaleServiceAreaPageClient() {
 
       <div className="mb-12 rounded-[30px] border border-line bg-cloud/60 p-6 sm:p-8">
         <h2 className="mt-0 text-3xl font-semibold tracking-tight text-slate">{t.neighborhoodsTitle}</h2><p>{t.neighborhoodsBody}</p>
-        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"><div><p className="!mt-0 text-xs font-semibold uppercase tracking-[0.18em] text-slate/60">{t.officeLabel}</p><p className="!mt-2 font-semibold text-slate">{siteConfig.address.streetAddress}, {siteConfig.address.addressLocality}, CA {siteConfig.address.postalCode}</p></div><Link href={localizeHref("/contact", language)} className="accent-button px-5 py-3">{t.officeLink}</Link></div>
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"><div><p className="!mt-0 text-xs font-semibold uppercase tracking-[0.18em] text-slate/60">{t.officeLabel}</p><p className="!mt-2 font-semibold text-slate">{siteConfig.address.streetAddress}, {siteConfig.address.addressLocality}, CA {siteConfig.address.postalCode}</p></div><button type="button" onClick={() => openEstimatorEvent()} className="accent-button px-5 py-3">{t.officeLink}</button></div>
       </div>
 
       <div><p className="!mt-0 text-xs font-semibold uppercase tracking-[0.2em] text-slate/65">{t.faqEyebrow}</p><h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate sm:text-4xl">{t.faqTitle}</h2><div className="mt-7 space-y-3">{t.faqs.map(([question, answer]) => <details key={question} className="rounded-[22px] border border-line bg-white/90 px-5 py-4 shadow-soft"><summary className="cursor-pointer list-none pr-6 text-base font-semibold text-slate">{question}</summary><p className="!mt-3 text-sm leading-7 text-slate/78">{answer}</p></details>)}</div></div>

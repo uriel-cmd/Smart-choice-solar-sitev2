@@ -20,13 +20,36 @@ export const metadata = buildMetadata({
 export default function PalmdaleServiceAreaPageEs() {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": `${siteConfig.url}/es/service-areas/palmdale-ca/#service`,
-    name: "Solar, baterías y coordinación de techo en Palmdale, CA",
-    url: `${siteConfig.url}/es/service-areas/palmdale-ca`,
-    provider: { "@id": `${siteConfig.url}/#organization` },
-    areaServed: ["Palmdale", "Rancho Vista", "Anaverde", "Joshua Hills", "Antelope Valley"].map((name) => ({ "@type": "Place", name })),
-    serviceType: ["Solar residencial", "Baterías", "Coordinación de techo", "Revisión de propuestas solares"]
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": `${siteConfig.url}/es/service-areas/palmdale-ca/#service`,
+        name: "Solar, baterías y coordinación de techo en Palmdale, CA",
+        url: `${siteConfig.url}/es/service-areas/palmdale-ca`,
+        provider: { "@id": `${siteConfig.url}/#organization` },
+        areaServed: {
+          "@type": "City",
+          name: "Palmdale, CA",
+          geo: { "@type": "GeoCoordinates", latitude: 34.5794, longitude: -118.1165 }
+        },
+        serviceType: ["Solar residencial", "Baterías", "Coordinación de techo", "Revisión de propuestas solares"]
+      },
+      {
+        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+        "@id": `${siteConfig.url}/#organization`,
+        name: siteConfig.name,
+        url: siteConfig.url,
+        telephone: siteConfig.phoneHref,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: siteConfig.address.streetAddress,
+          addressLocality: siteConfig.address.addressLocality,
+          addressRegion: siteConfig.address.addressRegion,
+          postalCode: siteConfig.address.postalCode,
+          addressCountry: siteConfig.address.addressCountry
+        }
+      }
+    ]
   };
 
   return (
