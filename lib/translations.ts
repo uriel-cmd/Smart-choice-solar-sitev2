@@ -15,6 +15,7 @@ export const translations = {
       solutions: "Solutions",
       reviews: "Reviews",
       serviceAreas: "Service Areas",
+      offers: "Offers",
       about: "About",
       resources: "Resources",
       freeAssessment: "Free Assessment",
@@ -196,6 +197,7 @@ export const translations = {
       solutions: "Soluciones",
       reviews: "Reseñas",
       serviceAreas: "Áreas de Servicio",
+      offers: "Ofertas",
       about: "Nosotros",
       resources: "Recursos",
       freeAssessment: "Evaluación Gratis",
@@ -377,6 +379,8 @@ export function navLabelFor(path: string, language: Language) {
       return t.reviews;
     case "/service-areas":
       return t.serviceAreas;
+    case "/offers":
+      return t.offers;
     case "/about":
       return t.about;
     case "/blog":

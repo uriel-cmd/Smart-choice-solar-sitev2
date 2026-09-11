@@ -16,6 +16,7 @@ const companyLinks = [
   { href: "/about", label: "About Us" },
   { href: "/reviews", label: "Reviews" },
   { href: "/blog", label: "Resources" },
+  { href: "/offers", label: "Offers" },
   { href: "/contact", label: "Free Assessment" }
 ];
 
@@ -127,7 +128,9 @@ export function SiteFooter() {
                       ? t.footer.reviews
                       : item.href === "/blog"
                         ? t.footer.resources
-                        : t.footer.freeAssessment}
+                        : item.href === "/offers"
+                          ? language === "en" ? "Offers" : "Ofertas"
+                          : t.footer.freeAssessment}
                 </Link>
               ))}
               {legalLinks.map((item) => (
