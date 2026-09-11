@@ -77,7 +77,7 @@ export function OffersPageClient() {
           <div className="mx-auto w-full max-w-md overflow-hidden rounded-[24px] border border-white/20 bg-white/10 shadow-[0_20px_45px_rgba(0,0,0,0.22)] lg:max-w-none">
             <Image
               src="/brand/mini-split-living-room.jpg"
-              alt="High-efficiency mini-split air conditioner in a modern living room"
+              alt="Ductless mini-split AC heat pump installed on a modern living room wall"
               width={1100}
               height={916}
               className="h-auto w-full object-cover"
