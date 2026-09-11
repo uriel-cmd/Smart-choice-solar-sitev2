@@ -63,7 +63,7 @@ export function OffersPageClient() {
 
   return (
     <ContentPage eyebrow={t.eyebrow} title={t.title} description={t.description}>
-      <section className="overflow-hidden rounded-[30px] bg-[radial-gradient(circle_at_top_right,rgba(143,203,231,0.32),transparent_34%),linear-gradient(145deg,#17385f_0%,#315f86_100%)] p-6 text-white shadow-[0_24px_60px_rgba(26,48,82,0.2)] sm:p-10">
+      <section className="overflow-hidden rounded-[30px] bg-[radial-gradient(circle_at_top_right,rgba(143,203,231,0.32),transparent_34%),linear-gradient(145deg,#17385f_0%,#315f86_100%)] p-6 text-white shadow-[0_24px_60px_rgba(26,48,82,0.2)] [&_h2]:!text-white [&_p]:!text-white sm:p-10">
         <p className="!mt-0 inline-flex rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/90">{t.badge}</p>
         <h2 className="mt-6 max-w-4xl text-3xl font-semibold tracking-tight text-white sm:text-5xl">{t.offerTitle}</h2>
         <p className="max-w-4xl text-base leading-8 text-white/85 sm:text-lg">{t.offerBody}</p>
