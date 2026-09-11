@@ -58,6 +58,7 @@ export const primaryNav = [
   { href: "/solutions", label: "Solutions" },
   { href: "/reviews", label: "Reviews" },
   { href: "/service-areas", label: "Service Areas" },
+  { href: "/offers", label: "Offers" },
   { href: "/about", label: "About" },
   { href: "/blog", label: "Resources" },
   { href: "/contact", label: "Free Assessment" }
