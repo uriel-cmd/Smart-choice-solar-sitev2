@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import { ContentPage } from "@/components/content-page";
 import { useLanguage } from "@/components/language-provider";
 import { openEstimatorEvent } from "@/components/zip-estimator-controller";
@@ -64,11 +66,25 @@ export function OffersPageClient() {
   return (
     <ContentPage eyebrow={t.eyebrow} title={t.title} description={t.description}>
       <section className="overflow-hidden rounded-[30px] bg-[radial-gradient(circle_at_top_right,rgba(143,203,231,0.32),transparent_34%),linear-gradient(145deg,#17385f_0%,#315f86_100%)] p-6 text-white shadow-[0_24px_60px_rgba(26,48,82,0.2)] [&_h2]:!text-white [&_p]:!text-white sm:p-10">
-        <p className="!mt-0 inline-flex rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/90">{t.badge}</p>
-        <h2 className="mt-6 max-w-4xl text-3xl font-semibold tracking-tight text-white sm:text-5xl">{t.offerTitle}</h2>
-        <p className="max-w-4xl text-base leading-8 text-white/85 sm:text-lg">{t.offerBody}</p>
-        <button type="button" onClick={() => openEstimatorEvent()} className="mt-7 rounded-full bg-white px-6 py-3.5 font-semibold text-slate shadow-[0_14px_30px_rgba(0,0,0,0.18)] transition hover:bg-cloud">{t.cta}</button>
-        <p className="mt-6 max-w-4xl text-sm leading-6 text-white/70">{t.callout}</p>
+        <div className="grid items-center gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10">
+          <div>
+            <p className="!mt-0 inline-flex rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/90">{t.badge}</p>
+            <h2 className="mt-6 text-3xl font-semibold tracking-tight text-white sm:text-5xl">{t.offerTitle}</h2>
+            <p className="text-base leading-8 text-white/85 sm:text-lg">{t.offerBody}</p>
+            <button type="button" onClick={() => openEstimatorEvent()} className="mt-7 rounded-full bg-white px-6 py-3.5 font-semibold text-slate shadow-[0_14px_30px_rgba(0,0,0,0.18)] transition hover:bg-cloud">{t.cta}</button>
+            <p className="mt-6 text-sm leading-6 text-white/70">{t.callout}</p>
+          </div>
+          <div className="mx-auto w-full max-w-md overflow-hidden rounded-[24px] border border-white/20 bg-white/10 shadow-[0_20px_45px_rgba(0,0,0,0.22)] lg:max-w-none">
+            <Image
+              src="/brand/mini-split-living-room.jpg"
+              alt="High-efficiency mini-split air conditioner in a modern living room"
+              width={1100}
+              height={916}
+              className="h-auto w-full object-cover"
+              sizes="(min-width: 1024px) 36vw, (min-width: 640px) 448px, calc(100vw - 48px)"
+            />
+          </div>
+        </div>
       </section>
 
       <section className="mt-12">
