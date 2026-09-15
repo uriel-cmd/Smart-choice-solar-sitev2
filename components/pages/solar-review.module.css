@@ -7,11 +7,8 @@
 .eyebrow>span { width:7px; height:7px; background:#bc852c; border-radius:50%; }
 .story h1 { font-size:clamp(36px,4vw,57px); line-height:1.08; letter-spacing:-2px; font-weight:650; margin:24px 0; }
 .intro { max-width:490px; font-size:16px; line-height:1.85; color:#506577; }
-.cta,.continue { display:flex; align-items:center; justify-content:space-between; gap:24px; border:0; border-radius:12px; padding:17px 22px; background:#e4ad4f; color:#172d42; font-size:14px; font-weight:750; cursor:pointer; }
-.cta { width:fit-content; margin-top:28px; }
-.cta:hover,.continue:hover { background:#edbb65; }
-.micro { font-size:11px; color:#5f7080; margin:13px 0 33px; }
-.micro span { padding:0 7px; }
+.continue { display:flex; align-items:center; justify-content:space-between; gap:24px; border:0; border-radius:12px; padding:17px 22px; background:#e4ad4f; color:#172d42; font-size:14px; font-weight:750; cursor:pointer; }
+.continue:hover { background:#edbb65; }
 .advisor { display:flex; align-items:center; gap:15px; border-top:1px solid #d7e3e9; padding-top:27px; }
 .advisor img,.initials { width:62px; height:62px; border-radius:50%; object-fit:cover; }
 .initials { display:grid; place-items:center; background:#173650; color:#b7d9e8; font-size:21px; }
@@ -49,8 +46,20 @@
 .success p { font-size:14px; line-height:1.8; color:#536d7e; margin:20px 0; }.success h3 { font-size:19px; margin-top:28px; font-weight:600; }
 .check { display:grid; place-items:center; width:50px; height:50px; border-radius:50%; background:#e4f2ec; color:#35735b; font-size:25px; }
 .calendar { width:100%; height:650px; border:0; margin-top:20px; }
+.reviews { max-width:1280px; margin:0 auto 84px; padding:70px 36px; border-top:1px solid #d7e3e9; }
+.reviewsHeading { display:grid; grid-template-columns:1.2fr .8fr; gap:70px; align-items:end; margin-bottom:36px; }
+.reviewsHeading h2 { max-width:700px; margin:17px 0 0; font-size:clamp(31px,3.2vw,47px); line-height:1.13; letter-spacing:-1.5px; font-weight:650; }
+.reviewsHeading>p { max-width:470px; margin:0; font-size:14px; line-height:1.8; color:#5c7180; }
+.reviewGrid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+.reviewCard { display:flex; flex-direction:column; min-height:340px; margin:0; padding:28px; border:1px solid #dce6ec; border-radius:20px; background:rgba(255,255,255,.86); box-shadow:0 15px 45px #1736500a; }
+.stars { color:#d99b32; letter-spacing:3px; font-size:15px; }
+.reviewCard blockquote { display:-webkit-box; overflow:hidden; -webkit-box-orient:vertical; -webkit-line-clamp:8; margin:20px 0 28px; color:#3f586a; font-size:13px; line-height:1.8; }
+.reviewCard footer { display:flex; align-items:center; gap:12px; margin-top:auto; }
+.reviewInitial { display:grid; place-items:center; width:40px; height:40px; border-radius:50%; background:#173650; color:white; font-weight:700; }
+.reviewCard footer strong,.reviewCard footer span { display:block; }.reviewCard footer strong { font-size:13px; }.reviewCard footer div span { margin-top:3px; color:#778b98; font-size:10px; }
+.allReviews { display:flex; width:fit-content; align-items:center; gap:14px; margin:28px auto 0; color:#274e67; font-size:13px; font-weight:700; border-bottom:1px solid #9fbac9; padding-bottom:4px; }
 .footer { max-width:1280px; margin:auto; padding:23px 36px; border-top:1px solid #dce5e9; display:flex; justify-content:space-between; gap:15px; color:#748795; font-size:10px; }.footer div { display:flex; gap:20px; }
 .page a:focus-visible,.page button:focus-visible { outline:2px solid #245d80; outline-offset:4px; }
-@media(max-width:1000px) { .layout { gap:35px; padding-top:48px; }.card { padding:26px; }.story h1 { font-size:42px; } }
-@media(max-width:720px) { .header { padding:15px 22px; }.header img { width:190px; height:50px; }.header>span { display:none; }.layout { display:flex; flex-direction:column; padding:32px 22px 42px; gap:30px; }.story h1 { font-size:39px; letter-spacing:-1.4px; }.intro { font-size:15px; }.card { width:100%; padding:26px 22px; }.card h2 { font-size:27px; }.proof { display:none; }.micro { margin-bottom:24px; }.story blockquote { margin-bottom:0; }.footer { padding:20px 22px; flex-wrap:wrap; }.fields { grid-template-columns:1fr; } }
+@media(max-width:1000px) { .layout { gap:35px; padding-top:48px; }.card { padding:26px; }.story h1 { font-size:42px; }.reviewGrid { grid-template-columns:1fr 1fr; }.reviewCard:last-child { grid-column:1/-1; }.reviewsHeading { gap:35px; } }
+@media(max-width:720px) { .header { padding:15px 22px; }.header img { width:190px; height:50px; }.header>span { display:none; }.layout { display:flex; flex-direction:column; padding:32px 22px 42px; gap:30px; }.story h1 { font-size:39px; letter-spacing:-1.4px; }.intro { font-size:15px; }.card { width:100%; padding:26px 22px; }.card h2 { font-size:27px; }.proof { display:none; }.story blockquote { margin-bottom:0; }.reviews { padding:52px 22px; margin-bottom:30px; }.reviewsHeading,.reviewGrid { grid-template-columns:1fr; }.reviewsHeading { gap:18px; }.reviewsHeading h2 { font-size:33px; }.reviewCard,.reviewCard:last-child { grid-column:auto; min-height:0; }.footer { padding:20px 22px; flex-wrap:wrap; }.fields { grid-template-columns:1fr; } }
 @media(prefers-reduced-motion:reduce) { .progress>span { transition:none; } }

@@ -2,7 +2,7 @@
 
 import { FormEvent, useEffect, useRef, useState } from "react";
 import { reviewHeadlines, reviewQuestions } from "@/lib/solar-review";
-import { siteConfig } from "@/lib/site";
+import { googleReviews, siteConfig } from "@/lib/site";
 import styles from "./solar-review.module.css";
 
 export function SolarReview({ ad, calendarUrl, portraitUrl }: { ad: string; calendarUrl: string; portraitUrl: string }) {
@@ -51,11 +51,9 @@ export function SolarReview({ ad, calendarUrl, portraitUrl }: { ad: string; cale
         <p className={styles.eyebrow}><span /> YOUR HOME. YOUR BILL. YOUR OPTIONS.</p>
         <h1>{reviewHeadlines[ad] || "See If Solar Actually Makes Sense for Your Home"}</h1>
         <p className={styles.intro}>No gimmicks. No “free solar” nonsense. Just a straightforward look at your electric bill, your home, and whether solar or battery storage could benefit you.</p>
-        <a href="#assessment" className={styles.cta}>Start My Solar Review <span aria-hidden="true">↗</span></a>
-        <p className={styles.micro}>About 60 seconds <span>•</span> No obligation</p>
         <div className={styles.advisor}>
           {portraitUrl ? <img src={portraitUrl} alt="Uriel I. Romo" width="76" height="76" /> : <div className={styles.initials} aria-hidden="true">UR</div>}
-          <div><strong>Uriel I. Romo</strong><p>Solar Consultant · Smart Choice Solar</p></div>
+          <div><strong>Uriel I. Romo</strong><p>Director · Smart Choice Solar</p></div>
         </div>
         <blockquote>“Most homeowners don’t need another generic solar pitch. They need someone to look at their actual situation and tell them what makes sense.”</blockquote>
         <div className={styles.proof}><span>01 <strong>Your utility usage</strong></span><span>02 <strong>Your solar options</strong></span><span>03 <strong>A clear next step</strong></span></div>
@@ -86,6 +84,20 @@ export function SolarReview({ ad, calendarUrl, portraitUrl }: { ad: string; cale
         </>}
       </section>
     </div>
+    <section className={styles.reviews} aria-labelledby="reviews-title">
+      <div className={styles.reviewsHeading}>
+        <div><p className={styles.eyebrow}><span /> REAL HOMEOWNER EXPERIENCES</p><h2 id="reviews-title">Before You Decide, Hear From Homeowners Who Already Did.</h2></div>
+        <p>Solar is a big decision. See what customers say about the clarity, guidance, and follow-through they received from Uriel and Smart Choice Solar.</p>
+      </div>
+      <div className={styles.reviewGrid}>
+        {[googleReviews[1], googleReviews[2], googleReviews[4]].map((review) => <article className={styles.reviewCard} key={review.name}>
+          <div className={styles.stars} aria-label={`${review.rating} out of 5 stars`}>★★★★★</div>
+          <blockquote>“{review.quote}”</blockquote>
+          <footer><span className={styles.reviewInitial}>{review.name.charAt(0)}</span><div><strong>{review.name}</strong><span>Google review</span></div></footer>
+        </article>)}
+      </div>
+      <a className={styles.allReviews} href="/reviews">Read more homeowner reviews <span aria-hidden="true">→</span></a>
+    </section>
     <footer className={styles.footer}><span>© {new Date().getFullYear()} Smart Choice Solar · Lancaster, California</span><div><a href="/privacy-policy">Privacy</a><a href="/terms">Terms</a></div></footer>
   </div>;
 }
