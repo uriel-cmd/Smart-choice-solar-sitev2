@@ -12,5 +12,5 @@ export const metadata: Metadata = {
 export default async function SolarReviewPage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   const params = await searchParams;
   const ad = typeof params.ad === "string" ? params.ad : "";
-  return <SolarReview ad={ad} calendarUrl={process.env.SOLAR_REVIEW_CALENDAR_URL || ""} portraitUrl={process.env.SOLAR_REVIEW_PORTRAIT_URL || ""} />;
+  return <SolarReview ad={ad} calendarUrl={process.env.SOLAR_REVIEW_CALENDAR_URL || ""} portraitUrl={process.env.SOLAR_REVIEW_PORTRAIT_URL || "/brand/uriel-solo-headshot.jpg"} />;
 }
