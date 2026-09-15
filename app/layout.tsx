@@ -1,13 +1,10 @@
-import { Suspense } from "react";
 import type { Metadata } from "next";
 
 import "./globals.css";
 
 import { LanguageProvider } from "@/components/language-provider";
-import { ZipEstimatorController } from "@/components/zip-estimator-controller";
+import { SiteShell } from "@/components/site-shell";
 import { buildLocaleAlternates } from "@/lib/i18n";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
 import { getLocalBusinessSchema } from "@/lib/schema";
 import { siteConfig } from "@/lib/site";
 
@@ -72,12 +69,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       </head>
       <body>
         <LanguageProvider>
-          <SiteHeader />
-          <main className="pb-[72px] lg:pb-0">{children}</main>
-          <SiteFooter />
-          <Suspense fallback={null}>
-            <ZipEstimatorController />
-          </Suspense>
+          <SiteShell>{children}</SiteShell>
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
