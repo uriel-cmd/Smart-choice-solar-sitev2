@@ -51,11 +51,14 @@ export function SolarReview({ ad, calendarUrl, portraitUrl }: { ad: string; cale
         <p className={styles.eyebrow}><span /> YOUR HOME. YOUR BILL. YOUR OPTIONS.</p>
         <h1>{reviewHeadlines[ad] || "See If Solar Actually Makes Sense for Your Home"}</h1>
         <p className={styles.intro}>No gimmicks. No “free solar” nonsense. Just a straightforward look at your electric bill, your home, and whether solar or battery storage could benefit you.</p>
-        <div className={styles.advisor}>
-          {portraitUrl ? <img src={portraitUrl} alt="Uriel I. Romo" width="76" height="76" /> : <div className={styles.initials} aria-hidden="true">UR</div>}
-          <div><strong>Uriel I. Romo</strong><p>Director · Smart Choice Solar</p></div>
+        <div className={styles.advisorCard}>
+          <p className={styles.advisorLabel}>YOUR REVIEW IS PERSONALLY HANDLED BY</p>
+          <div className={styles.advisor}>
+            {portraitUrl ? <img src={portraitUrl} alt="Uriel I. Romo" width="88" height="88" /> : <div className={styles.initials} aria-hidden="true">UR</div>}
+            <div><strong>Uriel I. Romo</strong><p>Director · Smart Choice Solar</p></div>
+          </div>
+          <blockquote>“Most homeowners don’t need another generic solar pitch. They need someone to look at their actual situation and tell them what makes sense.”</blockquote>
         </div>
-        <blockquote>“Most homeowners don’t need another generic solar pitch. They need someone to look at their actual situation and tell them what makes sense.”</blockquote>
         <div className={styles.proof}><span>01 <strong>Your utility usage</strong></span><span>02 <strong>Your solar options</strong></span><span>03 <strong>A clear next step</strong></span></div>
       </section>
       <section id="assessment" className={styles.card} aria-label="Your solar review">
