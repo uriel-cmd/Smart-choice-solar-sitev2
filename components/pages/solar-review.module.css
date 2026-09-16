@@ -59,7 +59,8 @@
 .reviewCard footer { display:flex; align-items:center; gap:12px; margin-top:auto; }
 .reviewInitial { display:grid; place-items:center; width:40px; height:40px; border-radius:50%; background:#173650; color:white; font-weight:700; }
 .reviewCard footer strong,.reviewCard footer span { display:block; }.reviewCard footer strong { font-size:13px; }.reviewCard footer div span { margin-top:3px; color:#778b98; font-size:10px; }
-.allReviews { display:flex; width:fit-content; align-items:center; gap:14px; margin:28px auto 0; color:#274e67; font-size:13px; font-weight:700; border-bottom:1px solid #9fbac9; padding-bottom:4px; }
+.reviewCta { display:flex; width:fit-content; align-items:center; justify-content:space-between; gap:34px; margin:32px auto 0; padding:17px 22px; border-radius:12px; background:#e4ad4f; color:#172d42; font-size:14px; font-weight:750; box-shadow:0 12px 28px rgba(186,132,42,.18); }
+.reviewCta:hover { background:#edbb65; }
 .footer { max-width:1280px; margin:auto; padding:23px 36px; border-top:1px solid #dce5e9; display:flex; justify-content:space-between; gap:15px; color:#748795; font-size:10px; }.footer div { display:flex; gap:20px; }
 .page a:focus-visible,.page button:focus-visible { outline:2px solid #245d80; outline-offset:4px; }
 @media(max-width:1000px) { .layout { gap:35px; padding-top:48px; }.card { padding:26px; }.story h1 { font-size:42px; }.reviewGrid { grid-template-columns:1fr 1fr; }.reviewCard:last-child { grid-column:1/-1; }.reviewsHeading { gap:35px; } }
