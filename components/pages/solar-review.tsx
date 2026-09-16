@@ -99,8 +99,8 @@ export function SolarReview({ ad, calendarUrl, portraitUrl }: { ad: string; cale
           <footer><span className={styles.reviewInitial}>{review.name.charAt(0)}</span><div><strong>{review.name}</strong><span>Google review</span></div></footer>
         </article>)}
       </div>
-      <a className={styles.allReviews} href="/reviews">Read more homeowner reviews <span aria-hidden="true">→</span></a>
+      <a className={styles.reviewCta} href="#assessment">Start My Solar Review <span aria-hidden="true">↑</span></a>
     </section>
-    <footer className={styles.footer}><span>© {new Date().getFullYear()} Smart Choice Solar · Lancaster, California</span><div><a href="/privacy-policy">Privacy</a><a href="/terms">Terms</a></div></footer>
+    <footer className={styles.footer}><span>© {new Date().getFullYear()} Smart Choice Solar</span><div><a href="/privacy-policy">Privacy</a><a href="/terms">Terms</a></div></footer>
   </div>;
 }
