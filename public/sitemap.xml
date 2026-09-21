@@ -91,6 +91,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/roofing" />
   </url>
   <url>
+    <loc>https://www.smartchoice.solar/solar-repair</loc>
+    <lastmod>2026-09-17T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/es/solar-repair</loc>
+    <lastmod>2026-09-17T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair" />
+  </url>
+  <url>
     <loc>https://www.smartchoice.solar/about</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
