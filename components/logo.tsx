@@ -20,8 +20,8 @@ export function Logo({ variant = "desktop", compact = false }: LogoProps) {
         ? "relative h-11 w-[220px] overflow-hidden sm:h-12 sm:w-[250px]"
         : "relative h-14 w-[260px] overflow-hidden sm:h-16 sm:w-[320px]"
       : compact
-        ? "relative h-8 w-[180px] overflow-hidden sm:h-10 sm:w-[290px] lg:h-[78px] lg:w-[560px]"
-        : "relative h-8 w-[180px] overflow-hidden sm:h-10 sm:w-[290px] lg:h-[102px] lg:w-[700px]";
+        ? "relative h-8 w-[180px] overflow-hidden sm:h-10 sm:w-[250px] lg:h-[56px] lg:w-[260px]"
+        : "relative h-8 w-[180px] overflow-hidden sm:h-10 sm:w-[270px] lg:h-[70px] lg:w-[320px]";
   const imageClassName =
     variant === "mobile"
       ? "object-contain object-center"
@@ -35,7 +35,7 @@ export function Logo({ variant = "desktop", compact = false }: LogoProps) {
           alt="Smart Choice Solar"
           fill
           priority
-          sizes={variant === "mobile" ? "260px" : "(max-width: 639px) 180px, (max-width: 1023px) 290px, 700px"}
+          sizes={variant === "mobile" ? "260px" : "(max-width: 639px) 180px, (max-width: 1023px) 270px, 320px"}
           className={imageClassName}
         />
       </div>
