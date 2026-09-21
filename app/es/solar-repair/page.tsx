@@ -36,8 +36,28 @@ export default function SolarRepairSpanishPage() {
         name: "Servicio y reparación de sistemas solares residenciales",
         url: `${siteConfig.url}/es/solar-repair`,
         provider: { "@id": `${siteConfig.url}/#organization` },
-        areaServed: { "@type": "State", name: "California" },
-        serviceType: ["Diagnóstico de sistemas solares", "Diagnóstico de inversores", "Reparación de monitoreo solar", "Diagnóstico de baja producción"]
+        telephone: siteConfig.phoneHref,
+        areaServed: [
+          { "@type": "State", name: "California" },
+          ...["Lancaster", "Los Angeles", "San Diego", "Sacramento"].map((name) => ({ "@type": "City", name })),
+          ...["Antelope Valley", "Bay Area", "Inland Empire", "Central Coast", "Central Valley", "Northern California", "Greater Los Angeles"].map((name) => ({ "@type": "AdministrativeArea", name }))
+        ],
+        serviceType: ["Diagnóstico de sistemas solares", "Diagnóstico de inversores", "Reparación de monitoreo solar", "Diagnóstico de baja producción"],
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Servicios de diagnóstico y reparación solar",
+          itemListElement: [
+            "Visita de diagnóstico del sistema solar",
+            "Diagnóstico del inversor solar",
+            "Reparación de monitoreo y comunicación",
+            "Diagnóstico de baja producción",
+            "Diagnóstico de batería y respaldo",
+            "Revisión de retiro y reinstalación solar"
+          ].map((name) => ({
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name }
+          }))
+        }
       },
       {
         "@type": "FAQPage",
