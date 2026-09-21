@@ -21,6 +21,7 @@ export const translations = {
       solar: "Solar",
       batteryStorage: "Battery Storage",
       roofing: "Roofing",
+      solarRepair: "Service & Repair",
       estimate: "Estimate",
       exploreServices: "Explore Services"
     },
@@ -202,6 +203,7 @@ export const translations = {
       solar: "Solar",
       batteryStorage: "Batería",
       roofing: "Techo",
+      solarRepair: "Servicio y Reparación",
       estimate: "Estimado",
       exploreServices: "Explorar Servicios"
     },
@@ -402,6 +404,8 @@ export function serviceNavLabelFor(path: string, language: Language) {
       return t.batteryStorage;
     case "/roofing":
       return t.roofing;
+    case "/solar-repair":
+      return t.solarRepair;
     case "/contact":
       return t.estimate;
     default:
