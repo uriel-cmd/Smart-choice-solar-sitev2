@@ -3,7 +3,7 @@ import { siteConfig } from "@/lib/site";
 export function getLocalBusinessSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
+    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
     "@id": `${siteConfig.url}/#organization`,
     name: siteConfig.legalName,
     alternateName: siteConfig.name,
@@ -33,7 +33,7 @@ export function getLocalBusinessSchema() {
         name: area
       }))
     ],
-    serviceType: ["Residential solar installation", "Battery storage", "Roofing coordination"],
+    serviceType: ["Residential solar installation", "Solar diagnostics and repair", "Battery storage", "Roofing coordination"],
     priceRange: "$$",
     contactPoint: [
       {
@@ -76,6 +76,22 @@ export function getLocalBusinessSchema() {
           itemOffered: {
             "@type": "Service",
             name: "Roofing"
+          }
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Solar system diagnostic service",
+            url: `${siteConfig.url}/solar-repair`
+          }
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Solar inverter and monitoring repair",
+            url: `${siteConfig.url}/solar-repair`
           }
         }
       ]
