@@ -1,10 +1,20 @@
+import { LeadSubmissionError } from "@/lib/lead-idempotency";
+
 import { NextResponse } from "next/server";
 
 import { isGoHighLevelConfigured, sendLeadToGoHighLevel } from "@/lib/gohighlevel";
 
 export async function POST(request: Request) {
-  const payload = await request.json();
+  const payload = await request.json().catch(() => null);
+  if (!payload || typeof payload !== "object" || Array.isArray(payload)) {
+    return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
+  }
   const isWaitlist = payload?.source === "out_of_area_waitlist";
+
+  const required = isWaitlist ? ["email", "zip"] : ["firstName", "lastName", "email", "phone", "address", "zip"];
+  if (required.some(key => typeof payload[key] !== "string" || !payload[key].trim())) {
+    return NextResponse.json({ error: "Missing required fields." }, { status: 400 });
+  }
 
   try {
     await sendLeadToGoHighLevel({
@@ -34,8 +44,11 @@ export async function POST(request: Request) {
             timeline: payload?.timeline
           },
       rawPayload: payload
-    });
+    }, request.headers.get("Idempotency-Key"));
   } catch (error) {
+    if (error instanceof LeadSubmissionError) {
+      return NextResponse.json({ error: error.message, code: error.code }, { status: error.status });
+    }
     console.error("GoHighLevel estimator sync failed", error);
     return NextResponse.json({ error: "Unable to sync estimator lead to CRM." }, { status: 502 });
   }

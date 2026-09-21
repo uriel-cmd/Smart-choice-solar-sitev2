@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useEffect, useRef, useState } from "react";
+import { createLeadSubmitter } from "@/lib/lead-submission";
 import { reviewHeadlines, reviewQuestions } from "@/lib/solar-review";
 import { googleReviews, siteConfig } from "@/lib/site";
 import styles from "./solar-review.module.css";
@@ -14,6 +15,7 @@ export function SolarReview({ ad, calendarUrl, portraitUrl }: { ad: string; cale
   const [error, setError] = useState("");
   const heading = useRef<HTMLHeadingElement>(null);
   const lock = useRef(false);
+  const submitLead = useRef(createLeadSubmitter());
   const previousStep = useRef(0);
   useEffect(() => {
     if (previousStep.current !== step || status === "success") heading.current?.focus();
@@ -33,9 +35,7 @@ export function SolarReview({ ad, calendarUrl, portraitUrl }: { ad: string; cale
       const value = params.get(key); if (value) attribution[key] = value;
     }
     try {
-      const response = await fetch("/api/solar-review", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...answers, ...contact, consent, attribution }) });
-      const result = await response.json();
-      if (!response.ok || !result.success) throw new Error(result.error || "Please try again.");
+      await submitLead.current("/api/solar-review", { ...answers, ...contact, consent, attribution });
       setStatus("success");
     } catch (e) { setError(e instanceof Error ? e.message : "We couldn’t send your request. Please try again."); setStatus("idle"); }
     finally { lock.current = false; }

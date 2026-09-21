@@ -115,6 +115,8 @@ Add this to `.env.local`:
 GHL_WEBHOOK_URL="https://services.leadconnectorhq.com/hooks/your-workflow-webhook"
 ```
 
+Also configure the server-only Redis credentials from `.env.example` before deploying. Shared storage is required for duplicate protection. See [the lead submission fix and GHL rollout guide](docs/lead-submission-fix.md).
+
 Then create a GoHighLevel workflow webhook that accepts the site payload.
 
 The site sends:

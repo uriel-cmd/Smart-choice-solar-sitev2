@@ -1,23 +1,16 @@
+import { LeadSubmissionError } from "@/lib/lead-idempotency";
+
 import { NextResponse } from "next/server";
 
 import { isGoHighLevelConfigured, sendLeadToGoHighLevel } from "@/lib/gohighlevel";
 
-type QuotePayload = {
-  firstName?: string;
-  lastName?: string;
-  email?: string;
-  phone?: string;
-  address?: string;
-  zip?: string;
-  message?: string;
-  language?: string;
-  pagePath?: string;
-};
-
 export async function POST(request: Request) {
-  const payload = (await request.json()) as QuotePayload;
+  const payload = await request.json().catch(() => null);
+  if (!payload || typeof payload !== "object" || Array.isArray(payload)) {
+    return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
+  }
 
-  if (!payload.firstName || !payload.lastName || !payload.email || !payload.phone || !payload.address || !payload.zip) {
+  if (["firstName", "lastName", "email", "phone", "address", "zip"].some(key => typeof payload[key] !== "string" || !payload[key].trim())) {
     return NextResponse.json({ error: "Missing required fields." }, { status: 400 });
   }
 
@@ -35,8 +28,11 @@ export async function POST(request: Request) {
       language: payload.language,
       pagePath: payload.pagePath,
       rawPayload: payload
-    });
+    }, request.headers.get("Idempotency-Key"));
   } catch (error) {
+    if (error instanceof LeadSubmissionError) {
+      return NextResponse.json({ error: error.message, code: error.code }, { status: error.status });
+    }
     console.error("GoHighLevel quote sync failed", error);
     return NextResponse.json({ error: "Unable to sync lead to CRM." }, { status: 502 });
   }
