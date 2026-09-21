@@ -1,7 +1,9 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useState, useRef } from "react";
 import { usePathname } from "next/navigation";
+
+import { createLeadSubmitter } from "@/lib/lead-submission";
 
 import { useLanguage, useTranslation } from "@/components/language-provider";
 
@@ -20,26 +22,20 @@ export function LeadForm({ compact = false, onSubmitted }: { compact?: boolean; 
   const { language } = useLanguage();
   const t = useTranslation();
   const [form, setForm] = useState(initialState);
+  const submitLead = useRef(createLeadSubmitter());
+  const submitting = useRef(false);
+  const [deliveryUnconfirmed, setDeliveryUnconfirmed] = useState(false);
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (submitting.current) return;
+    submitting.current = true;
+    setDeliveryUnconfirmed(false);
     setStatus("submitting");
 
     try {
-      const response = await fetch("/api/quote", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...form,
-          language,
-          pagePath: pathname
-        })
-      });
-
-      if (!response.ok) {
-        throw new Error("Request failed");
-      }
+      await submitLead.current("/api/quote", { ...form, language, pagePath: pathname });
 
       setForm(initialState);
       setStatus("success");
@@ -47,12 +43,16 @@ export function LeadForm({ compact = false, onSubmitted }: { compact?: boolean; 
     } catch (error) {
       console.error(error);
       setStatus("error");
+      setDeliveryUnconfirmed(error instanceof Error && error.name === "delivery_unconfirmed");
+    } finally {
+      submitting.current = false;
     }
   }
 
   return (
     <form
       onSubmit={handleSubmit}
+      aria-busy={status === "submitting"}
       className={`relative overflow-hidden rounded-[30px] border border-[#d7e8f2] bg-[linear-gradient(180deg,#eef6fb_0%,#e6f0f8_100%)] shadow-[0_22px_60px_rgba(26,48,82,0.1)] ${compact ? "p-5" : "p-6 sm:p-8"}`}
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.68),transparent_38%),linear-gradient(180deg,rgba(255,255,255,0.14),transparent_42%)]" />
@@ -165,7 +165,7 @@ export function LeadForm({ compact = false, onSubmitted }: { compact?: boolean; 
         <p className="mt-3 text-sm font-medium text-emerald-700">{t.leadForm.success}</p>
       ) : null}
       {status === "error" ? (
-        <p className="mt-3 text-sm font-medium text-red-700">{t.leadForm.error}</p>
+        <p className="mt-3 text-sm font-medium text-red-700">{deliveryUnconfirmed ? (language === "en" ? "Your request may already have been received. Please contact us to confirm before submitting again." : "Es posible que ya hayamos recibido tu solicitud. Contáctanos para confirmar antes de enviarla de nuevo.") : t.leadForm.error}</p>
       ) : null}
       </div>
     </form>

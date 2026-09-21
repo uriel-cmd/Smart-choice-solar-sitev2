@@ -1,9 +1,11 @@
 "use client";
 
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useState, useRef } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 
-import { useTranslation } from "@/components/language-provider";
+import { createLeadSubmitter } from "@/lib/lead-submission";
+
+import { useLanguage, useTranslation } from "@/components/language-provider";
 import { EstimatorModal } from "@/components/estimator-modal";
 import { LeadForm } from "@/components/lead-form";
 import { isSupportedZip } from "@/lib/estimator";
@@ -36,6 +38,8 @@ export function openContactEvent() {
 
 export function ZipEstimatorController() {
   const t = useTranslation();
+  const { language } = useLanguage();
+  const [waitlistStatus, setWaitlistStatus] = useState<"idle" | "submitting" | "error">("idle");
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [popupOpen, setPopupOpen] = useState(false);
@@ -43,6 +47,9 @@ export function ZipEstimatorController() {
   const [contactOpen, setContactOpen] = useState(false);
   const [zip, setZip] = useState("");
   const [zipStatus, setZipStatus] = useState<"idle" | "out_of_area">("idle");
+  const submitLead = useRef(createLeadSubmitter());
+  const submitting = useRef(false);
+  const [deliveryUnconfirmed, setDeliveryUnconfirmed] = useState(false);
   const [outOfAreaEmail, setOutOfAreaEmail] = useState("");
 
   const estimatorRequested = useMemo(() => searchParams.get("estimator") === "1", [searchParams]);
@@ -118,18 +125,22 @@ export function ZipEstimatorController() {
   async function handleOutOfAreaSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    await fetch("/api/estimate", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        zip,
-        email: outOfAreaEmail,
-        source: "out_of_area_waitlist",
-        pagePath: pathname
-      })
-    });
-
-    dismissPopup();
+    if (submitting.current) return;
+    submitting.current = true;
+    setWaitlistStatus("submitting");
+    setDeliveryUnconfirmed(false);
+    try {
+      await submitLead.current("/api/estimate", {
+        zip, email: outOfAreaEmail, source: "out_of_area_waitlist", pagePath: pathname
+      });
+      dismissPopup();
+      setWaitlistStatus("idle");
+    } catch (error) {
+      setWaitlistStatus("error");
+      setDeliveryUnconfirmed(error instanceof Error && error.name === "delivery_unconfirmed");
+    } finally {
+      submitting.current = false;
+    }
   }
 
   return (
@@ -192,18 +203,22 @@ export function ZipEstimatorController() {
                   <p className="mt-3 text-sm leading-7 text-slate/80">
                     {t.zipPopup.outDescription}
                   </p>
-                  <form className="mt-4 grid gap-3 sm:grid-cols-[1fr,auto]" onSubmit={handleOutOfAreaSubmit}>
+                  <form className="mt-4 grid gap-3 sm:grid-cols-[1fr,auto]" onSubmit={handleOutOfAreaSubmit} aria-busy={waitlistStatus === "submitting"}>
                     <input
                       type="email"
+                      required
                       value={outOfAreaEmail}
                       onChange={(event) => setOutOfAreaEmail(event.target.value)}
                       placeholder={t.leadForm.email}
                       className="rounded-[18px] border border-line bg-white px-4 py-3 text-ink outline-none transition focus:border-sky"
                     />
-                    <button type="submit" className="accent-button px-5 py-3">
-                      {t.header.getInTouch}
+                    <button type="submit" disabled={waitlistStatus === "submitting"} className="accent-button px-5 py-3 disabled:opacity-70">
+                      {waitlistStatus === "submitting" ? t.leadForm.sending : t.header.getInTouch}
                     </button>
                   </form>
+                  {waitlistStatus === "error" ? <p role="alert" className="mt-3 text-sm text-red-700">{deliveryUnconfirmed
+                    ? (language === "en" ? "Your request may already have been received. Please contact us to confirm before submitting again." : "Es posible que ya hayamos recibido tu solicitud. Contáctanos para confirmar antes de enviarla de nuevo.")
+                    : t.leadForm.error}</p> : null}
                 </div>
               )}
             </div>

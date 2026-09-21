@@ -1,3 +1,4 @@
+import { LeadSubmissionError } from "@/lib/lead-idempotency";
 import { NextResponse } from "next/server";
 import { isGoHighLevelConfigured, sendLeadToGoHighLevel } from "@/lib/gohighlevel";
 import { reviewQuestions } from "@/lib/solar-review";
@@ -28,9 +29,10 @@ export async function POST(request: Request) {
       language: "en", pagePath: "/solar-review",
       message: ["Personal solar review requested with Uriel I. Romo.", ...reviewQuestions.map(q => `${q.title} ${answers[q.key]}`), `Ad attribution: ${JSON.stringify(attribution)}`].join("\n"),
       rawPayload: { ...answers, attribution, consent: { text: "I agree to be contacted by Smart Choice Solar by phone or email about my solar review request.", acceptedAt: new Date().toISOString() } }
-    });
+    }, request.headers.get("Idempotency-Key"));
     return NextResponse.json({ success: true });
-  } catch {
+  } catch (error) {
+    if (error instanceof LeadSubmissionError) return NextResponse.json({ error: error.message, code: error.code }, { status: error.status });
     return NextResponse.json({ error: "We couldn’t send your review request. Please try again or call us." }, { status: 502 });
   }
 }

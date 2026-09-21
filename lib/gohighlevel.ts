@@ -1,3 +1,5 @@
+import { deliverLeadOnce, LeadSubmissionError } from "./lead-idempotency";
+
 type GoHighLevelLeadPayload = {
   formType: "quote" | "estimator" | "out_of_area_waitlist";
   source: string;
@@ -37,16 +39,17 @@ export function isGoHighLevelConfigured() {
   return Boolean(process.env.GHL_WEBHOOK_URL);
 }
 
-export async function sendLeadToGoHighLevel(payload: GoHighLevelLeadPayload) {
+export async function sendLeadToGoHighLevel(payload: GoHighLevelLeadPayload, submissionId: string | null = null) {
   const webhookUrl = process.env.GHL_WEBHOOK_URL;
 
   if (!webhookUrl) {
-    return { sent: false, configured: false };
+    throw new LeadSubmissionError("crm_unavailable", 503, "Lead delivery is not configured.");
   }
 
   const webhookPayload = {
     siteSource: "smart-choice-solar-site",
     submittedAt: new Date().toISOString(),
+    submissionId: submissionId || undefined,
     ...payload,
     phone: normalizePhone(payload.phone),
     tags: [
@@ -56,19 +59,24 @@ export async function sendLeadToGoHighLevel(payload: GoHighLevelLeadPayload) {
     ].filter(Boolean)
   };
 
-  const response = await fetch(webhookUrl, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(webhookPayload),
-    cache: "no-store"
+  const normalizedPayload = { ...payload, email: payload.email?.trim().toLowerCase(), phone: normalizePhone(payload.phone) };
+  const result = await deliverLeadOnce(normalizedPayload, submissionId, async () => {
+    const response = await fetch(webhookUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(webhookPayload),
+      cache: "no-store",
+      signal: AbortSignal.timeout(15000),
+      redirect: "error"
+    });
+
+    if (!response.ok) {
+      throw new Error(`GoHighLevel webhook failed (${response.status})`);
+    }
+
   });
 
-  if (!response.ok) {
-    const body = await response.text().catch(() => "");
-    throw new Error(`GoHighLevel webhook failed (${response.status}): ${body}`);
-  }
-
-  return { sent: true, configured: true };
+  return { sent: true, configured: true, ...result };
 }

@@ -1,6 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useRef } from "react";
+
+import { createLeadSubmitter } from "@/lib/lead-submission";
 
 import { useLanguage, useTranslation } from "@/components/language-provider";
 import {
@@ -214,6 +216,8 @@ export function EstimatorModal({
   } as const;
   const [step, setStep] = useState(initialStep);
   const [data, setData] = useState<EstimatorData>({ ...estimatorInitialData, zip: initialZip ?? "" });
+  const submitLead = useRef(createLeadSubmitter());
+  const submitting = useRef(false);
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [error, setError] = useState("");
 
@@ -221,7 +225,7 @@ export function EstimatorModal({
     if (isOpen) {
       setData((current) => ({ ...current, zip: initialZip ?? current.zip }));
       setStep(initialZip ? Math.max(1, initialStep) : initialStep);
-      setStatus("idle");
+      setStatus(submitting.current ? "submitting" : "idle");
       setError("");
       document.body.style.overflow = "hidden";
     } else {
@@ -270,6 +274,7 @@ export function EstimatorModal({
   }
 
   async function handleNext() {
+    if (submitting.current) return;
     const validationError = validateStep();
 
     if (validationError) {
@@ -278,29 +283,22 @@ export function EstimatorModal({
     }
 
     if (activeStep.id === "contact") {
+      submitting.current = true;
       setStatus("submitting");
 
       try {
-        const response = await fetch("/api/estimate", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            ...data,
-            estimate,
-            language
-          })
-        });
-
-        if (!response.ok) {
-          throw new Error("Submission failed");
-        }
+        await submitLead.current("/api/estimate", { ...data, estimate, language });
 
         setStatus("success");
         onSubmitted?.();
       } catch (submissionError) {
         console.error(submissionError);
         setStatus("error");
-        setError(language === "en" ? "Something went wrong while sending your estimate. Please try again." : "Algo salió mal al enviar tu estimado. Inténtalo de nuevo.");
+        setError(submissionError instanceof Error && submissionError.name === "delivery_unconfirmed"
+          ? (language === "en" ? "Your request may already have been received. Please contact us to confirm before submitting again." : "Es posible que ya hayamos recibido tu solicitud. Contáctanos para confirmar antes de enviarla de nuevo.")
+          : language === "en" ? "Something went wrong while sending your estimate. Please try again." : "Algo salió mal al enviar tu estimado. Inténtalo de nuevo.");
+      } finally {
+        submitting.current = false;
       }
 
       return;
