@@ -97,6 +97,14 @@ const homeCopy = {
         description: "Roofing guidance and solar coordination that reduce rework, timeline issues, and contractor handoff friction.",
         benefits: ["One coordinated scope", "Long-term roof protection", "Fewer project surprises"],
         href: "/roofing"
+      },
+      {
+        kicker: "Existing Solar Systems",
+        title: "Solar Service & Repair",
+        image: "/brand/smart-choice-solar-van-v3.png",
+        description: "Structured diagnostics for systems that are offline, underproducing, showing faults, or no longer reporting correctly.",
+        benefits: ["System diagnostics", "Inverter and monitoring faults", "Clear repair scope"],
+        href: "/solar-repair"
       }
     ],
     estimateCtaEyebrow: "Start With an Estimate",
@@ -257,6 +265,14 @@ const homeCopy = {
         description: "Orientación de techado y coordinación solar que reduce retrabajos, problemas de tiempo y fricción entre contratistas.",
         benefits: ["Un alcance coordinado", "Protección del techo a largo plazo", "Menos sorpresas"],
         href: "/roofing"
+      },
+      {
+        kicker: "Sistemas Solares Existentes",
+        title: "Servicio y Reparación Solar",
+        image: "/brand/smart-choice-solar-van-v3.png",
+        description: "Diagnóstico estructurado para sistemas apagados, con baja producción, fallas o problemas de monitoreo.",
+        benefits: ["Diagnóstico del sistema", "Fallas de inversor y monitoreo", "Alcance claro de reparación"],
+        href: "/solar-repair"
       }
     ],
     estimateCtaEyebrow: "Empieza con un Estimado",
@@ -520,7 +536,7 @@ export function HomePageClient() {
             </div>
           </div>
           <SectionHeading eyebrow={copy.servicesEyebrow} title={copy.servicesTitle} description={copy.servicesDescription} />
-          <div className="mt-7 grid gap-5 md:mt-8 md:grid-cols-3">
+          <div className="mt-7 grid gap-5 md:mt-8 md:grid-cols-2 xl:grid-cols-4">
             {copy.services.map((service) => <ServiceCard key={service.title} {...service} />)}
           </div>
         </div>
