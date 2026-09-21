@@ -4,13 +4,13 @@ import Link from "next/link";
 
 import { useLanguage, useTranslation } from "@/components/language-provider";
 import { localizeHref } from "@/lib/i18n";
-import { openEstimatorEvent } from "@/components/zip-estimator-controller";
+import { openContactEvent, openEstimatorEvent } from "@/components/zip-estimator-controller";
 
 type PageHeroProps = {
   eyebrow: string;
   title: string;
   description: string;
-  primaryCta?: { label?: string; labelKey?: "startFreeEstimate"; href?: string; action?: "estimate" };
+  primaryCta?: { label?: string; labelKey?: "startFreeEstimate"; href?: string; action?: "estimate" | "contact" };
   secondaryCta?: { label?: string; labelKey?: "readReviews"; href: string };
 };
 
@@ -32,8 +32,12 @@ export function PageHero({ eyebrow, title, description, primaryCta, secondaryCta
             {(primaryCta || secondaryCta) ? (
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 {primaryCta ? (
-                  primaryCta.action === "estimate" ? (
-                    <button type="button" onClick={() => openEstimatorEvent()} className="accent-button">
+                  primaryCta.action === "estimate" || primaryCta.action === "contact" ? (
+                    <button
+                      type="button"
+                      onClick={() => (primaryCta.action === "contact" ? openContactEvent() : openEstimatorEvent())}
+                      className="accent-button"
+                    >
                       {primaryCta.labelKey ? t.pageHero[primaryCta.labelKey] : primaryCta.label}
                     </button>
                   ) : (
