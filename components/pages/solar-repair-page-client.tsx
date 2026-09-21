@@ -1,16 +1,20 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import { InlineCTA } from "@/components/inline-cta";
 import { PageHero } from "@/components/page-hero";
 import { useLanguage } from "@/components/language-provider";
+import { openContactEvent } from "@/components/zip-estimator-controller";
+import { localizeHref } from "@/lib/i18n";
 import { siteConfig } from "@/lib/site";
 
 const copy = {
   en: {
     eyebrow: "Solar Service & Repair",
-    title: "Your solar system should not stay broken because the original installer stopped answering.",
+    title: "Solar Repair & Maintenance Services in California",
+    subheadline: "Your solar system should not stay broken because the original installer stopped answering.",
     description:
       "We troubleshoot existing residential solar systems that are offline, underproducing, showing faults, or no longer reporting correctly—then explain the problem and repair path before work moves forward.",
     primary: "Request Solar Service",
@@ -18,12 +22,12 @@ const copy = {
     signalEyebrow: "Start With The Symptom",
     signalTitle: "What is your system doing right now?",
     signals: [
-      ["System offline", "The inverter, gateway, or monitoring app shows no production or no communication."],
-      ["Production dropped", "Output is noticeably lower than normal, one section is missing, or the utility bill suddenly increased."],
-      ["Fault or warning", "The inverter or app is displaying an error, shutdown, isolation, arc, grid, or communication warning."],
-      ["Battery issue", "The battery is not charging, not discharging, unavailable for backup, or repeatedly going offline."],
-      ["Monitoring lost", "The system may still produce, but the app, portal, cellular connection, or internet reporting stopped updating."],
-      ["Roof or equipment work", "The system needs inspection, safe shutdown coordination, removal and reinstallation review, or repair after other work."]
+      ["System offline", "The inverter, gateway, or monitoring app shows no production or no communication.", "/solar-repair/system-offline"],
+      ["Production dropped", "Output is noticeably lower than normal, one section is missing, or the utility bill suddenly increased.", "/solar-repair/low-production"],
+      ["Fault or warning", "The inverter or app is displaying an error, shutdown, isolation, arc, grid, or communication warning.", "/solar-repair/inverter-fault"],
+      ["Battery issue", "The battery is not charging, not discharging, unavailable for backup, or repeatedly going offline.", "/solar-repair/battery-issues"],
+      ["Monitoring lost", "The system may still produce, but the app, portal, cellular connection, or internet reporting stopped updating.", "/solar-repair/monitoring-offline"],
+      ["Roof or equipment work", "The system needs inspection, safe shutdown coordination, removal and reinstallation review, or repair after other work.", "/solar-repair/removal-reinstallation"]
     ],
     safety: "Do not open energized equipment or repeatedly reset a faulted system. Take photos of the display and error message, then leave the equipment in a safe condition until it can be evaluated.",
     scopeEyebrow: "Diagnostic Scope",
@@ -50,7 +54,15 @@ const copy = {
     brandsTitle: "Experience across the equipment homeowners actually have installed.",
     brandsBody:
       "We can evaluate many systems built around SolarEdge, Enphase, Tesla, SMA, Fronius, and Power-One/Aurora equipment. Equipment generation, access credentials, warranty status, parts availability, and fault type determine the final service path.",
-    brands: ["SolarEdge", "Enphase", "Tesla", "SMA", "Fronius", "Power-One / Aurora"],
+    brands: [
+      ["SolarEdge", "/solar-repair/solaredge"],
+      ["Enphase", "/solar-repair/enphase"],
+      ["Tesla", "/solar-repair/tesla"],
+      ["SMA", "/solar-repair/sma"],
+      ["Fronius", "/solar-repair/fronius"],
+      ["Power-One / Aurora", "/solar-repair/power-one-aurora"]
+    ],
+    learnMore: "View troubleshooting guide",
     disclaimer: "Independent service. Manufacturer names identify equipment only and do not imply authorization, certification, endorsement, or affiliation.",
     faqEyebrow: "Solar Repair FAQ",
     faqTitle: "What homeowners need to know before scheduling service.",
@@ -68,7 +80,8 @@ const copy = {
   },
   es: {
     eyebrow: "Servicio y Reparación Solar",
-    title: "Tu sistema solar no debe quedarse descompuesto porque el instalador original dejó de responder.",
+    title: "Servicios de Reparación y Mantenimiento Solar en California",
+    subheadline: "Tu sistema solar no debe quedarse descompuesto porque el instalador original dejó de responder.",
     description:
       "Diagnosticamos sistemas residenciales apagados, con baja producción, fallas o problemas de monitoreo, y explicamos el problema y la ruta de reparación antes de avanzar.",
     primary: "Solicitar Servicio Solar",
@@ -76,12 +89,12 @@ const copy = {
     signalEyebrow: "Empieza Con El Síntoma",
     signalTitle: "¿Qué está haciendo tu sistema ahora?",
     signals: [
-      ["Sistema apagado", "El inversor, gateway o aplicación no muestra producción o comunicación."],
-      ["Bajó la producción", "La producción es menor, falta una sección o la factura eléctrica aumentó repentinamente."],
-      ["Falla o advertencia", "El inversor o aplicación muestra error, apagado, aislamiento, arco, red o comunicación."],
-      ["Problema de batería", "La batería no carga, no descarga, no respalda la casa o se desconecta repetidamente."],
-      ["Monitoreo perdido", "El sistema puede producir, pero la aplicación, portal, conexión celular o internet dejó de actualizar."],
-      ["Trabajo de techo o equipo", "El sistema necesita inspección, coordinación de apagado, revisión de retiro y reinstalación o reparación después de otro trabajo."]
+      ["Sistema apagado", "El inversor, gateway o aplicación no muestra producción o comunicación.", "/solar-repair/system-offline"],
+      ["Bajó la producción", "La producción es menor, falta una sección o la factura eléctrica aumentó repentinamente.", "/solar-repair/low-production"],
+      ["Falla o advertencia", "El inversor o aplicación muestra error, apagado, aislamiento, arco, red o comunicación.", "/solar-repair/inverter-fault"],
+      ["Problema de batería", "La batería no carga, no descarga, no respalda la casa o se desconecta repetidamente.", "/solar-repair/battery-issues"],
+      ["Monitoreo perdido", "El sistema puede producir, pero la aplicación, portal, conexión celular o internet dejó de actualizar.", "/solar-repair/monitoring-offline"],
+      ["Trabajo de techo o equipo", "El sistema necesita inspección, coordinación de apagado, revisión de retiro y reinstalación o reparación después de otro trabajo.", "/solar-repair/removal-reinstallation"]
     ],
     safety: "No abras equipo energizado ni reinicies repetidamente un sistema con falla. Toma fotos de la pantalla y del error y deja el equipo en condición segura hasta que pueda evaluarse.",
     scopeEyebrow: "Alcance Del Diagnóstico",
@@ -108,7 +121,15 @@ const copy = {
     brandsTitle: "Experiencia con el equipo que realmente tienen instalado los propietarios.",
     brandsBody:
       "Podemos evaluar muchos sistemas con equipos SolarEdge, Enphase, Tesla, SMA, Fronius y Power-One/Aurora. La generación del equipo, acceso, garantía, partes y tipo de falla determinan la ruta final.",
-    brands: ["SolarEdge", "Enphase", "Tesla", "SMA", "Fronius", "Power-One / Aurora"],
+    brands: [
+      ["SolarEdge", "/solar-repair/solaredge"],
+      ["Enphase", "/solar-repair/enphase"],
+      ["Tesla", "/solar-repair/tesla"],
+      ["SMA", "/solar-repair/sma"],
+      ["Fronius", "/solar-repair/fronius"],
+      ["Power-One / Aurora", "/solar-repair/power-one-aurora"]
+    ],
+    learnMore: "Ver guía de diagnóstico",
     disclaimer: "Servicio independiente. Los nombres de fabricantes solo identifican el equipo y no implican autorización, certificación, respaldo o afiliación.",
     faqEyebrow: "Preguntas De Reparación Solar",
     faqTitle: "Lo que debes saber antes de programar servicio.",
@@ -135,6 +156,7 @@ export function SolarRepairPageClient() {
       <PageHero
         eyebrow={t.eyebrow}
         title={t.title}
+        subheadline={t.subheadline}
         description={t.description}
         primaryCta={{ label: t.primary, action: "contact" }}
         secondaryCta={{ label: t.secondary, href: `tel:${siteConfig.phoneHref}` }}
@@ -159,11 +181,12 @@ export function SolarRepairPageClient() {
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate/65">{t.signalEyebrow}</p>
                 <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate sm:text-4xl">{t.signalTitle}</h2>
                 <div className="mt-7 grid gap-3 sm:grid-cols-2">
-                  {t.signals.map(([title, body]) => (
-                    <div key={title} className="rounded-[22px] border border-line bg-white/90 p-4 shadow-soft">
+                  {t.signals.map(([title, body, href]) => (
+                    <Link key={title} href={localizeHref(href, language)} className="group rounded-[22px] border border-line bg-white/90 p-4 shadow-soft transition hover:-translate-y-0.5 hover:border-sky/45 hover:shadow-[0_18px_38px_rgba(26,48,82,0.12)]">
                       <p className="font-semibold text-slate">{title}</p>
                       <p className="mt-2 text-sm leading-6 text-slate/76">{body}</p>
-                    </div>
+                      <span className="mt-3 inline-flex text-xs font-semibold text-blue transition group-hover:text-ink">{t.learnMore} →</span>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -221,7 +244,11 @@ export function SolarRepairPageClient() {
             <h2 className="mt-3 max-w-3xl text-3xl font-semibold tracking-tight text-white sm:text-4xl">{t.brandsTitle}</h2>
             <p className="mt-5 max-w-4xl text-base leading-8 text-white/78">{t.brandsBody}</p>
             <div className="mt-7 flex flex-wrap gap-3">
-              {t.brands.map((brand) => <span key={brand} className="rounded-full border border-white/18 bg-white/10 px-4 py-2 text-sm font-semibold text-white">{brand}</span>)}
+              {t.brands.map(([brand, href]) => (
+                <Link key={brand} href={localizeHref(href, language)} className="rounded-full border border-white/18 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:border-white/45 hover:bg-white/18">
+                  {brand} <span aria-hidden="true">→</span>
+                </Link>
+              ))}
             </div>
             <p className="mt-6 text-xs leading-6 text-white/58">{t.disclaimer}</p>
           </div>
@@ -252,6 +279,17 @@ export function SolarRepairPageClient() {
         secondaryLabel={t.secondary}
         sectionClassName="section-band pb-16"
       />
+
+      <div className="fixed inset-x-3 bottom-[82px] z-[95] lg:bottom-5 lg:left-auto lg:right-5 lg:w-auto" aria-label={language === "en" ? "Solar repair quick actions" : "Acciones rápidas de reparación solar"}>
+        <div className="mx-auto grid max-w-md grid-cols-2 gap-2 rounded-[22px] border border-white/60 bg-white/94 p-2 shadow-[0_18px_48px_rgba(26,48,82,0.2)] backdrop-blur-xl lg:w-[390px]">
+          <a href={`tel:${siteConfig.phoneHref}`} className="rounded-2xl border border-slate/15 px-3 py-3 text-center text-sm font-semibold text-slate transition hover:bg-cloud">
+            {t.secondary}
+          </a>
+          <button type="button" onClick={() => openContactEvent()} className="rounded-2xl bg-[linear-gradient(180deg,#73b5da_0%,#4d8fbb_100%)] px-3 py-3 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(77,143,187,0.25)] transition hover:brightness-95">
+            {t.ctaButton}
+          </button>
+        </div>
+      </div>
     </>
   );
 }
