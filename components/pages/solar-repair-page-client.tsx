@@ -1,12 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 
 import { InlineCTA } from "@/components/inline-cta";
 import { PageHero } from "@/components/page-hero";
 import { useLanguage } from "@/components/language-provider";
-import { openContactEvent } from "@/components/zip-estimator-controller";
 import { localizeHref } from "@/lib/i18n";
 import { siteConfig } from "@/lib/site";
 
@@ -165,30 +163,17 @@ export function SolarRepairPageClient() {
       <section className="pb-12 md:pb-16">
         <div className="container-shell">
           <div className="glass-panel overflow-hidden rounded-[34px]">
-            <div className="grid lg:grid-cols-[0.95fr,1.05fr] lg:items-stretch">
-              <div className="relative min-h-[270px] overflow-hidden bg-slate sm:min-h-[360px] lg:min-h-full">
-                <Image
-                  src="/brand/smart-choice-solar-van-v3.png"
-                  alt={language === "en" ? "Smart Choice Solar service vehicle" : "Vehículo de servicio de Smart Choice Solar"}
-                  fill
-                  priority
-                  sizes="(max-width: 1023px) 100vw, 48vw"
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_55%,rgba(26,48,82,0.48))]" />
-              </div>
-              <div className="p-6 sm:p-8 lg:p-10">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate/65">{t.signalEyebrow}</p>
-                <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate sm:text-4xl">{t.signalTitle}</h2>
-                <div className="mt-7 grid gap-3 sm:grid-cols-2">
-                  {t.signals.map(([title, body, href]) => (
-                    <Link key={title} href={localizeHref(href, language)} className="group rounded-[22px] border border-line bg-white/90 p-4 shadow-soft transition hover:-translate-y-0.5 hover:border-sky/45 hover:shadow-[0_18px_38px_rgba(26,48,82,0.12)]">
-                      <p className="font-semibold text-slate">{title}</p>
-                      <p className="mt-2 text-sm leading-6 text-slate/76">{body}</p>
-                      <span className="mt-3 inline-flex text-xs font-semibold text-blue transition group-hover:text-ink">{t.learnMore} →</span>
-                    </Link>
-                  ))}
-                </div>
+            <div className="p-6 sm:p-8 lg:p-10">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate/65">{t.signalEyebrow}</p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate sm:text-4xl">{t.signalTitle}</h2>
+              <div className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {t.signals.map(([title, body, href]) => (
+                  <Link key={title} href={localizeHref(href, language)} className="group flex min-h-full flex-col rounded-[22px] border border-line bg-white/90 p-5 shadow-soft transition hover:-translate-y-0.5 hover:border-sky/45 hover:shadow-[0_18px_38px_rgba(26,48,82,0.12)]">
+                    <p className="font-semibold text-slate">{title}</p>
+                    <p className="mt-2 flex-1 text-sm leading-6 text-slate/76">{body}</p>
+                    <span className="mt-4 inline-flex text-xs font-semibold text-blue transition group-hover:text-ink">{t.learnMore} →</span>
+                  </Link>
+                ))}
               </div>
             </div>
             <div className="border-t border-amber-300/35 bg-amber-50 px-6 py-4 text-sm leading-7 text-amber-950 sm:px-8">
@@ -280,16 +265,6 @@ export function SolarRepairPageClient() {
         sectionClassName="section-band pb-16"
       />
 
-      <div className="fixed inset-x-3 bottom-[82px] z-[95] lg:bottom-5 lg:left-auto lg:right-5 lg:w-auto" aria-label={language === "en" ? "Solar repair quick actions" : "Acciones rápidas de reparación solar"}>
-        <div className="mx-auto grid max-w-md grid-cols-2 gap-2 rounded-[22px] border border-white/60 bg-white/94 p-2 shadow-[0_18px_48px_rgba(26,48,82,0.2)] backdrop-blur-xl lg:w-[390px]">
-          <a href={`tel:${siteConfig.phoneHref}`} className="rounded-2xl border border-slate/15 px-3 py-3 text-center text-sm font-semibold text-slate transition hover:bg-cloud">
-            {t.secondary}
-          </a>
-          <button type="button" onClick={() => openContactEvent()} className="rounded-2xl bg-[linear-gradient(180deg,#73b5da_0%,#4d8fbb_100%)] px-3 py-3 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(77,143,187,0.25)] transition hover:brightness-95">
-            {t.ctaButton}
-          </button>
-        </div>
-      </div>
     </>
   );
 }
