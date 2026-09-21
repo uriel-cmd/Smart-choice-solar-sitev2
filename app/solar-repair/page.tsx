@@ -35,8 +35,28 @@ export default function SolarRepairPage() {
         name: "Residential solar service and repair",
         url: `${siteConfig.url}/solar-repair`,
         provider: { "@id": `${siteConfig.url}/#organization` },
-        areaServed: { "@type": "State", name: "California" },
-        serviceType: ["Solar system diagnostics", "Solar inverter troubleshooting", "Solar monitoring repair", "Solar production issue diagnosis"]
+        telephone: siteConfig.phoneHref,
+        areaServed: [
+          { "@type": "State", name: "California" },
+          ...["Lancaster", "Los Angeles", "San Diego", "Sacramento"].map((name) => ({ "@type": "City", name })),
+          ...["Antelope Valley", "Bay Area", "Inland Empire", "Central Coast", "Central Valley", "Northern California", "Greater Los Angeles"].map((name) => ({ "@type": "AdministrativeArea", name }))
+        ],
+        serviceType: ["Solar system diagnostics", "Solar inverter troubleshooting", "Solar monitoring repair", "Solar production issue diagnosis"],
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Solar diagnostic and repair services",
+          itemListElement: [
+            "Solar system diagnostic visit",
+            "Solar inverter troubleshooting",
+            "Monitoring and communication repair",
+            "Low-production diagnosis",
+            "Battery and backup troubleshooting",
+            "Solar removal and reinstallation review"
+          ].map((name) => ({
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name }
+          }))
+        }
       },
       {
         "@type": "FAQPage",
