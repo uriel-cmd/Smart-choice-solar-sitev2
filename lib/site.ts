@@ -60,6 +60,7 @@ export const serviceNav = [
   { href: "/solar", label: "Solar" },
   { href: "/battery-storage", label: "Battery Storage" },
   { href: "/roofing", label: "Roofing" },
+  { href: "/solar-repair", label: "Service & Repair" },
   { href: "/contact", label: "Estimate" }
 ] as const;
 
