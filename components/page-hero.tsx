@@ -4,17 +4,18 @@ import Link from "next/link";
 
 import { useLanguage, useTranslation } from "@/components/language-provider";
 import { localizeHref } from "@/lib/i18n";
-import { openEstimatorEvent } from "@/components/zip-estimator-controller";
+import { openContactEvent, openEstimatorEvent } from "@/components/zip-estimator-controller";
 
 type PageHeroProps = {
   eyebrow: string;
   title: string;
+  subheadline?: string;
   description: string;
-  primaryCta?: { label?: string; labelKey?: "startFreeEstimate"; href?: string; action?: "estimate" };
+  primaryCta?: { label?: string; labelKey?: "startFreeEstimate"; href?: string; action?: "estimate" | "contact" };
   secondaryCta?: { label?: string; labelKey?: "readReviews"; href: string };
 };
 
-export function PageHero({ eyebrow, title, description, primaryCta, secondaryCta }: PageHeroProps) {
+export function PageHero({ eyebrow, title, subheadline, description, primaryCta, secondaryCta }: PageHeroProps) {
   const { language } = useLanguage();
   const t = useTranslation();
 
@@ -28,12 +29,19 @@ export function PageHero({ eyebrow, title, description, primaryCta, secondaryCta
           <div className="relative max-w-3xl">
             <span className="eyebrow">{eyebrow}</span>
             <h1 className="mt-6 text-4xl font-semibold tracking-tight text-slate sm:text-5xl lg:text-6xl">{title}</h1>
-            <p className="mt-5 max-w-2xl text-base leading-8 text-slate/80">{description}</p>
+            {subheadline ? (
+              <h2 className="mt-5 max-w-3xl text-xl font-semibold leading-8 text-slate/88 sm:text-2xl">{subheadline}</h2>
+            ) : null}
+            <p className={`${subheadline ? "mt-4" : "mt-5"} max-w-2xl text-base leading-8 text-slate/80`}>{description}</p>
             {(primaryCta || secondaryCta) ? (
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 {primaryCta ? (
-                  primaryCta.action === "estimate" ? (
-                    <button type="button" onClick={() => openEstimatorEvent()} className="accent-button">
+                  primaryCta.action === "estimate" || primaryCta.action === "contact" ? (
+                    <button
+                      type="button"
+                      onClick={() => (primaryCta.action === "contact" ? openContactEvent() : openEstimatorEvent())}
+                      className="accent-button"
+                    >
                       {primaryCta.labelKey ? t.pageHero[primaryCta.labelKey] : primaryCta.label}
                     </button>
                   ) : (

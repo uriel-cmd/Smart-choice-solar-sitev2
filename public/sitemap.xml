@@ -91,6 +91,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/roofing" />
   </url>
   <url>
+    <loc>https://www.smartchoice.solar/solar-repair</loc>
+    <lastmod>2026-09-17T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/es/solar-repair</loc>
+    <lastmod>2026-09-17T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair" />
+  </url>
+  <url>
     <loc>https://www.smartchoice.solar/about</loc>
     <lastmod>2026-04-07T03:47:19.346Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -449,5 +467,221 @@
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/blog/questions-to-ask-before-signing-a-solar-contract" />
     <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/blog/questions-to-ask-before-signing-a-solar-contract" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/blog/questions-to-ask-before-signing-a-solar-contract" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/solar-repair/system-offline</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/system-offline" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/system-offline" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/system-offline" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/es/solar-repair/system-offline</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/system-offline" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/system-offline" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/system-offline" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/solar-repair/low-production</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/low-production" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/low-production" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/low-production" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/es/solar-repair/low-production</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/low-production" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/low-production" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/low-production" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/solar-repair/inverter-fault</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/inverter-fault" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/inverter-fault" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/inverter-fault" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/es/solar-repair/inverter-fault</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/inverter-fault" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/inverter-fault" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/inverter-fault" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/solar-repair/battery-issues</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/battery-issues" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/battery-issues" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/battery-issues" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/es/solar-repair/battery-issues</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/battery-issues" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/battery-issues" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/battery-issues" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/solar-repair/monitoring-offline</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/monitoring-offline" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/monitoring-offline" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/monitoring-offline" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/es/solar-repair/monitoring-offline</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/monitoring-offline" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/monitoring-offline" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/monitoring-offline" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/solar-repair/removal-reinstallation</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/removal-reinstallation" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/removal-reinstallation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/removal-reinstallation" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/es/solar-repair/removal-reinstallation</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/removal-reinstallation" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/removal-reinstallation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/removal-reinstallation" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/solar-repair/solaredge</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/solaredge" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/solaredge" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/solaredge" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/es/solar-repair/solaredge</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/solaredge" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/solaredge" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/solaredge" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/solar-repair/enphase</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/enphase" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/enphase" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/enphase" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/es/solar-repair/enphase</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/enphase" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/enphase" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/enphase" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/solar-repair/tesla</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/tesla" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/tesla" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/tesla" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/es/solar-repair/tesla</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/tesla" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/tesla" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/tesla" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/solar-repair/sma</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/sma" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/sma" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/sma" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/es/solar-repair/sma</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/sma" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/sma" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/sma" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/solar-repair/fronius</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/fronius" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/fronius" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/fronius" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/es/solar-repair/fronius</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/fronius" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/fronius" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/fronius" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/solar-repair/power-one-aurora</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/power-one-aurora" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/power-one-aurora" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/power-one-aurora" />
+  </url>
+  <url>
+    <loc>https://www.smartchoice.solar/es/solar-repair/power-one-aurora</loc>
+    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.smartchoice.solar/solar-repair/power-one-aurora" />
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://www.smartchoice.solar/es/solar-repair/power-one-aurora" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.smartchoice.solar/solar-repair/power-one-aurora" />
   </url>
 </urlset>

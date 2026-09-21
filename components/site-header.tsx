@@ -144,30 +144,30 @@ export function SiteHeader() {
           </div>
         </div>
       </div>
-      <div className={`hidden w-full items-center px-8 transition-all duration-200 lg:flex xl:px-10 2xl:px-12 ${isScrolled ? "min-h-24 gap-6" : "min-h-32 gap-8"}`}>
+      <div className={`hidden w-full items-center px-6 transition-all duration-200 lg:flex xl:px-8 2xl:px-12 ${isScrolled ? "min-h-20 gap-5" : "min-h-24 gap-6"}`}>
         <div className="shrink-0">
           <Logo compact={isScrolled} />
         </div>
-        <nav className="hidden flex-1 items-center justify-center gap-6 whitespace-nowrap lg:flex xl:gap-8 2xl:gap-10">
+        <nav className="hidden flex-1 items-center justify-center gap-4 whitespace-nowrap lg:flex xl:gap-5 2xl:gap-7">
           {primaryNav.map((item) => (
-            <Link key={item.href} href={localizeHref(item.href, language)} className="text-base font-semibold text-slate transition hover:text-ink xl:text-[17px]">
+            <Link key={item.href} href={localizeHref(item.href, language)} className="text-sm font-semibold text-slate transition hover:text-ink 2xl:text-base">
               {navLabelFor(item.href, language)}
             </Link>
           ))}
         </nav>
-        <div className="ml-auto hidden shrink-0 items-center gap-4 lg:flex">
+        <div className="ml-auto hidden shrink-0 items-center gap-3 lg:flex">
           <button
             type="button"
             onClick={() => openContactEvent()}
             aria-label={t.header.getInTouch}
-            className="rounded-full bg-[linear-gradient(180deg,#73b5da_0%,#4d8fbb_100%)] px-9 py-4 text-base font-semibold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_14px_32px_rgba(77,143,187,0.3)] transition hover:brightness-95 xl:px-12 xl:py-5 xl:text-[17px]"
+            className="rounded-full bg-[linear-gradient(180deg,#73b5da_0%,#4d8fbb_100%)] px-5 py-3 text-sm font-semibold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_14px_32px_rgba(77,143,187,0.3)] transition hover:brightness-95 2xl:px-7 2xl:py-4 2xl:text-base"
           >
             {t.header.getInTouch}
           </button>
           <a
             href={`tel:${siteConfig.phoneHref}`}
             aria-label={`${t.header.call} ${siteConfig.phoneDisplay}`}
-            className="rounded-full border border-slate/20 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(244,248,252,0.92))] px-9 py-4 text-base font-semibold text-slate shadow-[inset_0_1px_0_rgba(255,255,255,0.55)] transition hover:border-slate/30 hover:bg-white xl:px-12 xl:py-5 xl:text-[17px]"
+            className="hidden rounded-full border border-slate/20 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(244,248,252,0.92))] px-7 py-4 text-base font-semibold text-slate shadow-[inset_0_1px_0_rgba(255,255,255,0.55)] transition hover:border-slate/30 hover:bg-white 2xl:inline-flex"
           >
             {t.header.call} {siteConfig.phoneDisplay}
           </a>
