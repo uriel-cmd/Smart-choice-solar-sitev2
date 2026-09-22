@@ -21,8 +21,10 @@ export function getLocalBusinessSchema() {
     },
     geo: {
       "@type": "GeoCoordinates",
-      ...siteConfig.geo
+      latitude: 34.6466832,
+      longitude: -118.1502569
     },
+    hasMap: "https://www.google.com/maps/search/?api=1&query=Smart%20Choice%20Solar&query_place_id=ChIJC8ByWQJOV40RriTku6NeTqg",
     areaServed: [
       {
         "@type": "State",
