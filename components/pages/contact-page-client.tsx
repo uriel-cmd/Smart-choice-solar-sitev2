@@ -58,18 +58,6 @@ export function ContactPageClient() {
     <>
       <PageHero eyebrow={t.eyebrow} title={t.title} description={t.description} primaryCta={{ action: "estimate", labelKey: "startFreeEstimate" }} secondaryCta={{ href: "/reviews", labelKey: "readReviews" }} />
       <EstimateCalculator />
-      <section className="pb-16">
-        <div className="container-shell grid gap-8 lg:grid-cols-[0.85fr,1.15fr]">
-          <div className="space-y-4">
-            {t.reasons.map((reason) => <div key={reason} className="glass-panel-strong rounded-[24px] p-5 text-sm leading-7 text-slate/80">{reason}</div>)}
-            <div className="glass-panel-strong rounded-[24px] p-5 text-sm leading-7 text-slate/80">
-              {t.orEmail} <a href={`tel:${siteConfig.phoneHref}`} className="font-semibold text-ink">{siteConfig.phoneDisplay}</a> {language === "en" ? "or email" : "o envía correo a"}{" "}
-              <a href={`mailto:${siteConfig.email}`} className="font-semibold text-ink">{siteConfig.email}</a>.
-            </div>
-          </div>
-          <LeadForm />
-        </div>
-      </section>
       <section className="pb-16" aria-labelledby="business-location-heading">
         <div className="container-shell grid overflow-hidden rounded-[32px] border border-white/70 bg-white/85 shadow-soft lg:grid-cols-[0.8fr,1.2fr]">
           <div className="flex flex-col justify-center p-7 sm:p-10">
@@ -105,6 +93,18 @@ export function ContactPageClient() {
               referrerPolicy="strict-origin-when-cross-origin"
             />
           </div>
+        </div>
+      </section>
+      <section className="pb-16">
+        <div className="container-shell grid gap-8 lg:grid-cols-[0.85fr,1.15fr]">
+          <div className="space-y-4">
+            {t.reasons.map((reason) => <div key={reason} className="glass-panel-strong rounded-[24px] p-5 text-sm leading-7 text-slate/80">{reason}</div>)}
+            <div className="glass-panel-strong rounded-[24px] p-5 text-sm leading-7 text-slate/80">
+              {t.orEmail} <a href={`tel:${siteConfig.phoneHref}`} className="font-semibold text-ink">{siteConfig.phoneDisplay}</a> {language === "en" ? "or email" : "o envía correo a"}{" "}
+              <a href={`mailto:${siteConfig.email}`} className="font-semibold text-ink">{siteConfig.email}</a>.
+            </div>
+          </div>
+          <LeadForm />
         </div>
       </section>
       <InlineCTA eyebrow={t.ctaEyebrow} title={t.ctaTitle} description={t.ctaDescription} primaryLabel={t.ctaPrimary} secondaryLabel={`${t.orEmail} ${siteConfig.phoneDisplay}`} />
