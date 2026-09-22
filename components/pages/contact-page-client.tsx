@@ -21,7 +21,12 @@ const copy = {
     ctaEyebrow: "Need Fast Answers?",
     ctaTitle: "Use the estimate path for quicker qualification, or submit the full form for a hands-on review.",
     ctaDescription: "Both routes are designed to feel easy. The difference is simply how much guidance you want up front.",
-    ctaPrimary: "Start My Estimate"
+    ctaPrimary: "Start My Estimate",
+    locationEyebrow: "Our Location",
+    locationTitle: "Find Smart Choice Solar in Lancaster.",
+    locationDescription: "Visit our Lancaster office or open Google Maps for turn-by-turn directions.",
+    directionsLabel: "Open in Google Maps",
+    mapTitle: "Google Map showing Smart Choice Solar in Lancaster, California"
   },
   es: {
     eyebrow: "Evaluación Gratis",
@@ -36,7 +41,12 @@ const copy = {
     ctaEyebrow: "¿Necesitas Respuestas Rápidas?",
     ctaTitle: "Usa el estimador para una calificación más rápida o envía el formulario completo para una revisión más directa.",
     ctaDescription: "Ambas rutas están diseñadas para sentirse fáciles. La diferencia es cuánta guía quieres desde el inicio.",
-    ctaPrimary: "Comenzar Mi Estimado"
+    ctaPrimary: "Comenzar Mi Estimado",
+    locationEyebrow: "Nuestra Ubicación",
+    locationTitle: "Encuentra Smart Choice Solar en Lancaster.",
+    locationDescription: "Visita nuestra oficina en Lancaster o abre Google Maps para obtener indicaciones paso a paso.",
+    directionsLabel: "Abrir en Google Maps",
+    mapTitle: "Mapa de Google que muestra Smart Choice Solar en Lancaster, California"
   }
 } as const;
 
@@ -58,6 +68,43 @@ export function ContactPageClient() {
             </div>
           </div>
           <LeadForm />
+        </div>
+      </section>
+      <section className="pb-16" aria-labelledby="business-location-heading">
+        <div className="container-shell grid overflow-hidden rounded-[32px] border border-white/70 bg-white/85 shadow-soft lg:grid-cols-[0.8fr,1.2fr]">
+          <div className="flex flex-col justify-center p-7 sm:p-10">
+            <p className="eyebrow">{t.locationEyebrow}</p>
+            <h2 id="business-location-heading" className="mt-3 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
+              {t.locationTitle}
+            </h2>
+            <p className="mt-4 max-w-xl text-base leading-8 text-slate/80">{t.locationDescription}</p>
+            <address className="mt-6 not-italic text-base leading-8 text-slate/90">
+              <strong className="text-ink">{siteConfig.name}</strong><br />
+              {siteConfig.address.streetAddress}<br />
+              {siteConfig.address.addressLocality}, {siteConfig.address.addressRegion} {siteConfig.address.postalCode}<br />
+              <a href={`tel:${siteConfig.phoneHref}`} className="font-semibold text-ink hover:text-solar">{siteConfig.phoneDisplay}</a>
+            </address>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Smart%20Choice%20Solar&query_place_id=ChIJC8ByWQJOV40RriTku6NeTqg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex w-fit items-center justify-center rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition hover:bg-solar hover:text-ink"
+            >
+              {t.directionsLabel}
+            </a>
+          </div>
+          <div className="min-h-[360px] bg-slate/10 lg:min-h-[480px]">
+            <iframe
+              title={t.mapTitle}
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC77E5JaH8A3_gekYpQEsaHYZlY6A_qgRI&q=place_id:ChIJC8ByWQJOV40RriTku6NeTqg&zoom=16"
+              width="100%"
+              height="100%"
+              className="block min-h-[360px] w-full border-0 lg:min-h-[480px]"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
+          </div>
         </div>
       </section>
       <InlineCTA eyebrow={t.ctaEyebrow} title={t.ctaTitle} description={t.ctaDescription} primaryLabel={t.ctaPrimary} secondaryLabel={`${t.orEmail} ${siteConfig.phoneDisplay}`} />
