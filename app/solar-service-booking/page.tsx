@@ -64,10 +64,6 @@ export default function SolarServiceBookingPage() {
   return (
     <div className="text-ink">
       <div className="container-shell max-w-[1420px] pb-20 pt-12 lg:pt-16">
-        <div className="mb-8 flex flex-wrap items-center justify-between gap-3 text-sm">
-          <span className="eyebrow">Smart Choice Solar · Service & Repair</span>
-          <a className="font-semibold text-slate underline decoration-sky underline-offset-4" href="tel:+18447876456">Questions? (844) 787-6456</a>
-        </div>
         <div className="grid items-start gap-8 lg:grid-cols-[1.05fr_.95fr]">
           <section className="brand-panel relative overflow-hidden rounded-[34px] p-7 text-white sm:p-10">
             <span className="text-xs font-semibold uppercase tracking-[0.24em] text-[#c3e6f8]">Existing solar systems · Independent diagnostics</span>
